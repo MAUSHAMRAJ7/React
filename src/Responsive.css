@@ -485,7 +485,7 @@ flex-wrap: wrap;
   }
   .sub-nav-li-hide-home {
     display: block;
-    font-size: 16px;
+    font-size: 3.6rem;
     color: #222222;
     font-weight: 600;
   }
@@ -494,7 +494,7 @@ flex-wrap: wrap;
   }
   .extra-menu {
     display: block;
-    font-size: 16px;
+    font-size: 3.6rem;
     color: #222222;
     font-weight: 600;
   }
