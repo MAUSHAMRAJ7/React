@@ -26,7 +26,7 @@ function Manufacturing() {
         <img src="./image/manufa.png" alt="manufacturing" />
         </div>
       </div>
-      <div className="secondadvertisment">
+      <div className="secondadvertisment responsivesecondad">
         <h5 className="sideadvertisment_response " style={{textAlign: 'center'}}>Advertisement</h5>
         <img className="sideadd_img" src="./image/sideadd.png" alt="addimage" />
     </div>

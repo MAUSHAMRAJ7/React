@@ -131,6 +131,11 @@
   .sideadvertisment {
     width: 100%;
     height: 0%;
+    margin-top: 50px;
+  }
+  .secondadvertisment{
+    display: block;
+    margin-top: 50px;
   }
   .sideadvertisment_response {
     text-align: center;
@@ -422,7 +427,7 @@ flex-wrap: wrap;
 .res-navbar {
     margin-top: 2.1rem;
     display: flex;
-    justify-content: space-between
+    justify-content:space-around;
 }
 .nav_container{
     position: fixed;
