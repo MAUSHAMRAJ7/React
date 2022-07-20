@@ -60,6 +60,7 @@
   .manufacturing_main {
     flex-direction: column-reverse;
     width: 100%;
+    margin-top: 100px;
   }
   .manufacturing_left {
     /* border: 1px solid red; */
@@ -430,7 +431,7 @@ flex-wrap: wrap;
     background-color: #ffff;
     top: 0;
     height: auto;
-    box-shadow: 0px 2px 10px;
+    /* box-shadow: 0px 2px 10px; */
     margin-left: -5px;
 }
   .hamburger-menu {
@@ -453,7 +454,7 @@ flex-wrap: wrap;
     box-shadow: 0px 0px 3px;
     border-style: none;
     border-radius: 10px;
-    width: 130rem;
+    /* width: 130rem; */
     text-align: center;
   }
   .sub-ul-nav {
