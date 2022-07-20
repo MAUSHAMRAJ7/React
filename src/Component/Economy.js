@@ -10,6 +10,7 @@ function Economy() {
             <div className="economy_card">
               <div className="economy_resimg">
               <img src={item.src} alt="" />
+              <span className="premium_logo">PREMIUM</span>
               </div>
               <div className="economy_respara">
               <h3 className="menu_title title_response">{item.title}</h3>
