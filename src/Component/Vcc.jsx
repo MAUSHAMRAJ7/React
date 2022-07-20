@@ -14,7 +14,7 @@ function Vcc() {
             </div>
             <div className="vcc_sub">
                 <div className='vcc_frame'>
-                <iframe width="900" height="506" src="https://www.youtube.com/embed/35npVaFGHMY" title="Welcome to India ! [CINEMATIC TRAVEL FILM]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className='vcc_frame_iframe' width="900" height="506" src="https://www.youtube.com/embed/35npVaFGHMY" title="Welcome to India ! [CINEMATIC TRAVEL FILM]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         
                     {/* />{" "} */}
                 </div>

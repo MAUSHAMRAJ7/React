@@ -107,7 +107,7 @@ function Stories() {
       })}
     </div>
     
-    <div className="cardimage1">
+    <div className="cardimage1 cardimage_responsestories">
       {storiesdata1.map((item) => {
         return (
           <div className="card_content1">
@@ -150,7 +150,7 @@ function Stories() {
       })}
     </div>
     
-    <div className="cardimage1">
+    <div className="cardimage1 cardimage_responsestories">
       {storiesdata3.map((item) => {
         return (
           <div className="card_content1">
