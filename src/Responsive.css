@@ -531,6 +531,46 @@ margin-right: 0px;
 .cardimage_responsestories{
   display: none;
 }
+
+.event_sub{
+  justify-content: space-around;
+}
+.col_content_updateresponsive{
+  display: block;
+}
+.col_content-responsive{
+  display: none;
+}
+.event_author{
+  font-size: 20px;
+}
+.event_para{
+  font-size: 23px;
+}
+.event_heading{
+  font-size:20px;
+  color: #096FFA;
+}
+.event_content{
+  width: 100%;
+  margin-left: 22px;
+}
+.event_img{
+  width: 50%;
+}
+.event_img img{
+  width: 100%;
+}
+.event_sub{
+  width: fit-content;
+  border-radius: 15px;
+}
+.col_content_heading{
+  font-size: 5.2rem;
+}
+.cardrow{
+  margin-left: 0px;
+}
 }
 
 

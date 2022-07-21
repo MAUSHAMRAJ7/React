@@ -7,7 +7,7 @@ import 'swiper/scss/navigation';
 function Events(props) {
   return (
     <div className="container">
-        <div className="col_content">
+        <div className="col_content col_content-responsive">
         <div className="col_content_heading1">
         <div className="col_content_heading">
                     <h3 className='col_heading'>{props.title}</h3>

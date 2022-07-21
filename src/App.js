@@ -11,7 +11,7 @@ import Stories from './Component/Stories';
 import Footer from './Footer';
 import Events from './Component/Events';
 import Col2 from './Component/Col2';
-import Eventdata from './Database/Eventdata';
+import {Eventdata,Updatedataresponse  }from './Database/Eventdata';
 import Tmtdata from './Database/Tmtdata';
 import Techcircledata from './Database/Techcircledata';
 import Mergerdata from './Database/Mergerdata';
@@ -23,6 +23,7 @@ import Vcccircledata from './Database/Vcccircledata';
 import Vcc from './Component/Vcc';
 import {Editordata,Popular} from './Database/Editordata';
 import Follow from './Component/Follow';
+import Upcomingevent from './Component/Upcomingevent';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <Col2 card={Partnerdata} title={"Limited Partner"}/>
       <Advertisment img="./image/ad2.png"/>
       <Vccircle card={Vcccircledata} head={"VCCircle Premium"}/>
+      <Upcomingevent card={Updatedataresponse}/>
       <Events card={Eventdata} title={"Upcoming Events"}/>
       <Col2 card={Foundersdata} title={"Founders"}/>
       <Advertisment img="./image/ad2.png"/>
