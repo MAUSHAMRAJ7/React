@@ -168,6 +168,9 @@
   .follow img {
     width: 100%;
   }
+  .info{
+    margin-top: 25px;
+  }
   .info h3 {
     font-size: 7rem;
   }
