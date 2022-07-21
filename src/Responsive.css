@@ -301,6 +301,7 @@
 .vcc_main{
     width: 100%;
     height: auto;
+    padding: 0px 30px;
 }
 .vcc_frame{
     width:100%;
