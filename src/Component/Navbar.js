@@ -59,6 +59,19 @@ function Navbar() {
           </ul>
         </div>
         <div className={menu ? "sub-nav res-subnav" : "sub-nav"}>
+        <div className="nav_close">
+            <span>
+            <img
+            src="./image/logo.png"
+            className="logo-img res-logo-img"
+            alt="logo"
+          />
+            </span>
+            <span className="nav-cross" >
+              <a href="/" onClick={show}>
+              <i  class="fa-solid fa-xmark cross-icon"></i></a>
+            </span>
+          </div>
           <ul className="sub-ul-nav">
             <li className="sub-nav-li sub-nav-li-hide-home">Home</li>
             <li className="sub-nav-li sub-nav-li-hide-home">Sign In</li>
