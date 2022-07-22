@@ -33,6 +33,7 @@ function App() {
       <Advertisment img="./image/ad1.png" />
       <Manufacturing/>
        <Economy/>
+       <Advertisment img="./image/ad2.png"/>
       <Editor edit={Editordata} headtitle={"Editor’s Pick"} img={"./image/editioreco.png"} lefttitle={"ECONOMY"} leftpara={"EMERGING MARKETS - Asian markets mixed as they digest Chinese data; South Korean stocks fall"} />
        <Follow/>
       <Col2 card={Partnerdata} title={"Limited Partner"}/>
