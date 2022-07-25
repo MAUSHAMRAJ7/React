@@ -82,6 +82,9 @@ html{
 .hamburger-menu{
   display: none;
 }
+.nav_close{
+  display: none;
+}
 
 /* Add css */
 
@@ -474,9 +477,13 @@ border: 1px solid pink;
   }
   .col_content_img{
     width: 225px;
+    padding: 10px 10px;
     /* height: 223px; */
     border: 0.3rem solid #0000001A;
     border-radius: 1.2rem;
+  }
+  .col_content_img img{
+    width: 100%;
   }
   .col2_content_img{
     margin-left: 0px;
@@ -505,11 +512,15 @@ border: 1px solid pink;
     background: #FFFFFF;
     border: 1px solid #ffffff;
     margin: 15px 50px;
+    padding: 10px 10px;
   
   }
   .vcccircle_img{
     /* margin: 15px 15px; */
     width: 25.6rem;
+  }
+  .vcccircle_img img{
+    width: 100%;
   }
   .cardimage_vccircle{
     display: flex;
