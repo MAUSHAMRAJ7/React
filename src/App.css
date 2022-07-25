@@ -576,6 +576,9 @@ border: 1px solid pink;
     height: 2.7rem;
     margin-right: 1.0rem;
     margin-top:1.5rem;}
+    .bottom_vcccircle{
+      display: none;
+    }
 
     /* Vcc video section */
 .vcc_main{

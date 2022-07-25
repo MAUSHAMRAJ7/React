@@ -331,6 +331,11 @@
 .viewmore_para span{
     width: 15px;
 }
+.bottom_vcccircle{
+  display: block;
+  text-align: center;
+  border: 1px solid;
+}
 
 .col_content{
     width: 100%;}
@@ -431,6 +436,15 @@ flex-wrap: wrap;
 }
 .vcccircle_btn{
     display: none;
+}
+.vcccircle_btn1 {
+  border: 1px solid;
+  border-radius: 17px;
+  background: #096FFA;
+  width: 240px;
+  height: 36px;
+  margin: auto;
+  padding: 10px 10px;
 }
 .vcccircle_author{
     font-size: 14px;

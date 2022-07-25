@@ -42,7 +42,7 @@ function Vccircle(props) {
             </div>
         </div>
         <div className='bottom_vcccircle'>
-        <button className="vcccircle_btn">SUBSCRIBE</button>
+        <button className="vcccircle_btn1">SUBSCRIBE</button>
         </div>
     </div>
     </div>
