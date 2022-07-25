@@ -193,6 +193,9 @@ margin-top:1.6rem;
 .editor_left{
   width: 372px;
 }
+.editor_content1{
+  padding: 10px 10px;
+}
 .editor-para{
   font-size: 1.8rem;
   color: #222222;
@@ -463,8 +466,14 @@ border: 1px solid pink;
     font-weight: medium;
   }
   .col_text{
-    
-    font-size: 1.4rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    /* font-size: 1.4rem; */
     font-weight: medium;
     color: #222222;
     margin-top: 1rem;
@@ -476,7 +485,8 @@ border: 1px solid pink;
     margin-top: 1.4rem;
   }
   .col_content_img{
-    width: 225px;
+    /* width: 225px; */
+    width: 100%;
     padding: 10px 10px;
     /* height: 223px; */
     border: 0.3rem solid #0000001A;
@@ -487,13 +497,18 @@ border: 1px solid pink;
   }
   .col2_content_img{
     margin-left: 0px;
-    width: 21.2rem;
+    /* width: 21.2rem; */
+    width: 100%;
+    padding: 10px 10px;
     /* height: 223px; */
     /* background: grey; */
     /* border: 0.1rem solid #0000001A; */
     border-radius: 1.2rem;
     background: #FAFAFA;
     border: 0.1rem solid #EDEDED;
+}
+.col2_content_img img{
+  width: 100%;
 }
   
   /* Vcccircle Premium */
@@ -539,6 +554,13 @@ border: 1px solid pink;
     font-size: 1.6rem;
     font-weight:500;
     color: #222222;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
   }
   .vcccircle_author{
     font-family: "Montserrat","sans-serif";
