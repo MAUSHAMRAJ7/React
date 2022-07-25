@@ -153,6 +153,7 @@ margin-top:1.6rem;
   height: 3.4rem;
   color: #ffffff;
   margin-top:2.4rem;
+  border: 1px solid;
 }
 
 .manufacturing_right{
@@ -579,7 +580,7 @@ border: 1px solid pink;
     /* Vcc video section */
 .vcc_main{
   box-shadow: 0rem 0.8rem 1.5rem #0000000d;
-  border: 1px solid #00000040;
+  /* border: 1px solid #00000040; */
   border-radius: 1.4rem;
   background: #FFFFFF;
   height: 42.9rem;
@@ -601,7 +602,7 @@ margin-top: 2.0rem;
 border-radius: 1.4rem;
 height: 31.2rem;
 width: 55.4rem;
-border: 1px solid black;
+/* border: 1px solid black; */
 }
 .vcc_frame_content{
 width: 51.2rem;
@@ -677,4 +678,10 @@ color: #222222;
 } */
 .col_content_updateresponsive{
   display:none;
+}
+.mergerdesktop{
+  display: block;
+}
+.mergerresponse{
+  display: none;
 }

@@ -11,7 +11,14 @@ function Col(props) {
         <div className="col_content">
           <div className="col_content_heading1">
             <div className="col_content_heading">
-              <h3 className="col_heading">{props.title}</h3>
+              <h3 className="col_heading">{props.title}
+              <span className="mergerdesktop">
+                {props.title2}
+              </span>
+              <span className="mergerresponse">
+                {props.title3}
+              </span>
+              </h3>
               <p className="col_para">
                 View More{" "}
                 <span>

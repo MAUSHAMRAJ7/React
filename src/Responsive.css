@@ -210,8 +210,8 @@
     font-size: 15px;
   }
   .card-text2 {
-    font-size: 4.2rem;
-    width: 94%;
+    font-size: 3.2rem;
+    width: 100%;
   }
   .heading_title {
     font-size: 20px;
@@ -219,15 +219,15 @@
   .card_content {
     width: 100%;
   }
-  .card_content-response_img {
+  /* .card_content-response_img {
     width: 100%;
-  }
+  } */
   .card_content_text {
     margin-left: 10px;
 }
-  .card_content-response_img img {
+  /* .card_content-response_img img {
     width: 100%;
-  }
+  } */
   /* .responsivesideadd{
         display: none;
     } */
@@ -603,6 +603,12 @@ margin-right: 0px;
 }
 .cardrow{
   margin-left: 0px;
+}
+.mergerdesktop{
+  display: none;
+}
+.mergerresponse{
+  display: block;
 }
 }
 

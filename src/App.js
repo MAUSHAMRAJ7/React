@@ -49,7 +49,8 @@ function App() {
       <Signup/>
       <Col card={Techcircledata} title={"TechCircle"}/>
       <Advertisment img="./image/ad2.png"/>
-      <Col card={Mergerdata} title={"Mergers & Acquisitions"}/>
+      <Col card={Mergerdata} title2={"Mergers & Acquisitions"} title3={"M&A"}/>
+      {/* <Col className="mergers" card={{Mergerdata}} title={"M&A"}/> */}
       <Col card={Financialsdata} title={"Financials"}/>
       <Stories/>
       <Footer/> 
