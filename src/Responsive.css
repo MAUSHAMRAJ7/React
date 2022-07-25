@@ -492,6 +492,9 @@ flex-wrap: wrap;
     margin-right: 26px;
     margin-top: 10px;
   }
+  .nav_close{
+    display: block;
+  }
   /* .nav_close{
     text-align: left;
   } */
