@@ -29,7 +29,7 @@ function Navbar() {
             alt="logo"
           />
           <ul>
-            <li className="sub-nav-li sub-nav-li-hide">
+            <li className="sub-nav-li1 sub-nav-li-hide">
               <img
                 src="./image/crown.png"
                 className="nav-img menu-nav-img"

@@ -445,6 +445,7 @@ flex-wrap: wrap;
   height: 36px;
   margin: auto;
   padding: 10px 10px;
+  margin-bottom: 35px;
 }
 .vcccircle_author{
     font-size: 14px;
@@ -463,6 +464,7 @@ flex-wrap: wrap;
     margin-top: 2.1rem;
     display: flex;
     justify-content:space-around;
+    align-items: center;
 }
 .nav_container{
     position: fixed;
@@ -478,6 +480,10 @@ flex-wrap: wrap;
     display: block;
     font-size: 5rem;
   }
+  .logo-img{
+    width: 15%;
+    height: 50px;
+  }
   .nav-ul {
     display: none;
   }
@@ -488,7 +494,7 @@ flex-wrap: wrap;
     display: none;
   }
   .res-subnav {
-    top: 2%;
+    top: 0%;
     background-color: #fafafa;
     display: block;
     width: 100%;
@@ -500,6 +506,7 @@ flex-wrap: wrap;
     border-radius: 10px;
     /* width: 130rem; */
     text-align: center;
+    padding: 20px 0px;
   }
   .cross-icon{
     font-size: 35px;
@@ -508,6 +515,8 @@ flex-wrap: wrap;
   }
   .nav_close{
     display: block;
+    border-bottom: 2px solid #767676;
+    padding: 10px 0px;
   }
   /* .nav_close{
     text-align: left;
@@ -524,8 +533,16 @@ flex-wrap: wrap;
     font-size: 4.6rem;
     color: #222222;
     font-weight: 600;
+    margin: 3px 0px;
+    border-bottom: 1px solid #8080806b;
+  }
+  .sub-nav-li1{
+    text-align: left;
+    padding-left: 50px;
+    font-size: 4.6rem;
+    color: #222222;
+    font-weight: 600;
     margin: 11px 0px;
-    border-bottom: 1px solid grey;
   }
   .sub-nav-li-hide {
     display: block;
