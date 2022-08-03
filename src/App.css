@@ -39,7 +39,7 @@ html{
   margin-top: 15px;
 }
 .nav-li {
-  padding: 1px;
+  padding: 10px;
   font-size: 14px;
   align-items: center;
   color: #222222;
@@ -179,10 +179,9 @@ margin-top:1.6rem;
 
 .editor_main{
   /* display: flex; */
-  box-shadow: 0 2px 4px #0000001A;
-  /* border: 1px solid pink; */
-  /* height:399px; */
+  border-bottom: 1px solid #0000001a;
   width: 115.6rem;
+  margin-top: 30px;
   justify-content: space-around;
 }
 .editor_head{
@@ -279,6 +278,9 @@ margin-top:1.6rem;
   font-size: 1.2rem;
   color: #484848;
 }
+.info h3 {
+  font-size: 22px;
+}
 
 /* Side advertisment */
 .sideadvertisment{
@@ -287,6 +289,9 @@ margin-top:1.6rem;
   /* border: 1px solid black; */
   background: #F0F0F0;
 
+}
+.sideadvertisment h5 {
+  font-size: 12px;
 }
 /* .sideadd_img{
   width: 3rem;
@@ -415,6 +420,7 @@ border: 1px solid pink;
   }
   .editor_submain{
     display:flex;
+    margin-bottom: 30px;
   }
   .editor_content2{
     margin-right: 2rem;
@@ -460,6 +466,9 @@ border: 1px solid pink;
   .col_cardimage{
     display: flex;
     margin-top: 3rem;
+  }
+  .col_content {
+    margin: 50px 0px;
   }
   .col_para{
    
@@ -511,6 +520,9 @@ border: 1px solid pink;
 .col2_content_img img{
   width: 100%;
 }
+.col_content_img_content{
+  padding: 10px;
+}
   
   /* Vcccircle Premium */
   .vcc_frame_iframe{
@@ -520,15 +532,18 @@ border: 1px solid pink;
   }
 .vccircle_main{
   background: #000000;
+  padding: 10px;
+  margin-top: 40px;
   }
   .vcccircle_sub{
-    display: flex;
-    width: 262px;
+    /* display: flex; */
+    width: 256px;
     border-radius: 14px;
     background: #FFFFFF;
-    border: 1px solid #ffffff;
-    margin: 15px 50px;
-    padding: 10px 10px;
+    /* border: 1px solid #ffffff; */
+    /* margin: 15px 50px;
+    padding: 10px 10px; */
+    margin-top: 20px;
   
   }
   .vcccircle_img{
@@ -538,6 +553,9 @@ border: 1px solid pink;
   .vcccircle_img img{
     width: 100%;
   }
+  .vcccircle_content {
+    padding: 10px;
+}
   .cardimage_vccircle{
     display: flex;
     margin: 1.5rem 0px;
@@ -687,4 +705,28 @@ color: #222222;
 }
 .mergerresponse{
   display: none;
+}
+.swiper-button-next{
+  width: 50px !important;
+  height: 50px !important;
+  left: auto;
+  right: 0px;
+  color: white;
+  background-color: #096ffa;
+  border-radius: 50%;
+}
+
+.swiper-button-prev {
+  width: 50px !important;
+  height: 50px !important;
+  left: auto;
+  right: 0px;
+  color: white;
+  background-color: #096ffa;
+  border-radius: 50%;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: white;
 }

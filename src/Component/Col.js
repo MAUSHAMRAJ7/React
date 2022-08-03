@@ -42,9 +42,13 @@ function Col(props) {
                       className="col_content_img"
                       style={{ "margin-left": "0" }}
                     >
+                      <div className="col_content_img_main">
                       <img src={item.src} alt="" />
+                      </div>
+                      <div className="col_content_img_content">
                       <p className="col_text">{item.para}</p>
                       <p className="col_author">{item.author}</p>
+                      </div>
                     </div>
                   </SwiperSlide>
                 );

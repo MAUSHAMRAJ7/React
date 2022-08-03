@@ -81,7 +81,7 @@ function Navbar() {
                 alt="glass-icon"
                 className="nav-img menu-nav-img"
               />
-              Subscribe
+              <span className="nav_subscribe_res"> Subscribe</span>
             </li>
 
             <li className="sub-nav-li extra-menu-one">Private Equity</li>

@@ -19,8 +19,8 @@ function Vccircle(props) {
 
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={4}
-              slidesPerView={3}
+              spaceBetween={10}
+              slidesPerView={4}
               navigation
               >
             {props.card.map((item) => {
@@ -29,6 +29,8 @@ function Vccircle(props) {
               <div className='vcccircle_sub' style={{"margin-left":"0"}}>
                 <div className='vcccircle_img'>
                 <img src={item.src} alt="" />
+                </div>
+                <div className='vcccircle_content'>
                 <h3 className="vcccircle_title">{item.title}</h3>
                 <p className="vcccircle_para">{item.para}</p>
                 <p className="vcccircle_author">{item.author}</p>   

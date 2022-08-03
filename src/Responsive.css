@@ -63,6 +63,9 @@
     width: 100%;
     margin-top: 100px;
   }
+  .nav_subscribe_res{
+    color: #F83900;
+  }
   .manufacturing_left {
     /* border: 1px solid red; */
     width: 100%;
@@ -172,7 +175,7 @@
     margin-top: 25px;
   }
   .info h3 {
-    font-size: 7rem;
+    font-size: 18px;
   }
   .info img {
     width: 100%;
@@ -268,7 +271,7 @@
     width: 100%;
   }
   .col_para {
-    font-size: 4.4rem;
+    font-size: 14px;
     font-weight: medium;
   }
   .col_heading {
@@ -449,7 +452,8 @@ flex-wrap: wrap;
   margin-bottom: 35px;
 }
 .vcccircle_author{
-    font-size: 14px;
+    font-size: 12px;
+    padding: 5px 0px;
 }
 .vcccircle_para{
     font-size: 17px;
@@ -641,6 +645,12 @@ margin-right: 0px;
 }
 .mergerresponse{
   display: block;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  display: none !important;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  display: none !important;
 }
 }
 
