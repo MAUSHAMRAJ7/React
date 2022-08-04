@@ -90,8 +90,9 @@ html{
 
 .advertis{
   /* border: 1px solid green; */
-  width: 1156px;
-  height:130px;
+  /* width: 1156px; */
+  width: 100%;
+  height:auto;
   background: #f0f0f0;
   display: flex;
   justify-content: center;
@@ -102,6 +103,7 @@ html{
 .advertis_img{
   text-align: center;
   margin-top:10px;
+  width: 100%;
 }
 
 /* Manufacturing section css */
@@ -116,8 +118,13 @@ html{
 }
 .manufacturing_left{
   /* border: 1px solid red; */
-  width: 568px;
+  /* width: 568px; */
+  width: 50%;
   
+}
+.manufacturing_right img{
+  width: 100%;
+  border-radius: 14px;
 }
 .menu_title{
 font-size: 1.4rem;
@@ -130,6 +137,13 @@ margin-top:0.8rem;
   font-size: 1.6rem;
   font-weight: normal;
   margin-top:1.4rem;
+  -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 .manu_author_para{
 font-size: 1.2rem;
@@ -166,6 +180,7 @@ margin-top:1.6rem;
 .economy_main{
   width: 1156px;
   display: flex;
+  margin-top: 40px;
 }
 .economy_card{
   width: 274px;
@@ -174,13 +189,18 @@ margin-top:1.6rem;
 .economy_resimg{
   position: relative;
 }
+.economy_resimg img{
+  width: 100%;
+  border-radius: 14px;
+}
 
 /* Editiors section*/
 
 .editor_main{
   /* display: flex; */
   border-bottom: 1px solid #0000001a;
-  width: 115.6rem;
+  /* width: 115.6rem; */
+  width: 100%;
   margin-top: 30px;
   justify-content: space-around;
 }
@@ -195,6 +215,7 @@ margin-top:1.6rem;
 }
 .editor_content1{
   padding: 10px 10px;
+  width: 33.3%;
 }
 .editor-para{
   font-size: 1.8rem;
@@ -227,9 +248,15 @@ margin-top:1.6rem;
 }
 .card_content_text{
   margin-left: 15px;
+  width: 50%;
 }
 .card_content-response_img{
   position: relative;
+  width: 50%;
+}
+.card_content-response_img img{
+  width: 100%;
+  border-radius: 14px;
 }
 
 .premium_logo{
@@ -256,6 +283,13 @@ margin-top:1.6rem;
   font-family: "Montserrat","sans-serif";
   font-weight: normal;
   margin-top: 1.0rem;
+  -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 /* follow */
 .follow_main{
@@ -288,6 +322,7 @@ margin-top:1.6rem;
   height:27.5rem;
   /* border: 1px solid black; */
   background: #F0F0F0;
+  padding: 18px 0px;
 
 }
 .sideadvertisment h5 {
@@ -305,6 +340,7 @@ margin-top:1.6rem;
   display: flex;
   background-color: #000000;
   height: 13rem;
+  margin-top: 20px;
   border-radius: 1.4rem;
   justify-content: space-around;
   
@@ -377,6 +413,7 @@ border: 1px solid pink;
   display:flex;
   margin-top: 2.5rem;
   border-bottom: 0.1rem solid #E3E3E3;
+  margin-right: 15px;
 }
 .card_content1{
   display:flex;
@@ -425,9 +462,17 @@ border: 1px solid pink;
   .editor_content2{
     margin-right: 2rem;
     margin-left: 2rem;
+    padding: 40px 0px;
+    border-right: 1px solid #22222222;
   }
   .editor_premium{
     position: relative;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .editor_premium img{
+    width: 100%;
+    border-radius: 14px;
   }
   .event_content{
     width: 20.0rem;
@@ -497,9 +542,9 @@ border: 1px solid pink;
   .col_content_img{
     /* width: 225px; */
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px;
     /* height: 223px; */
-    border: 0.3rem solid #0000001A;
+    border: 0.1rem solid #0000001A;
     border-radius: 1.2rem;
   }
   .col_content_img img{
@@ -522,6 +567,10 @@ border: 1px solid pink;
 }
 .col_content_img_content{
   padding: 10px;
+}
+.col_content_img_main img {
+  width: 100%;
+  border-radius: 14px;
 }
   
   /* Vcccircle Premium */
@@ -552,6 +601,8 @@ border: 1px solid pink;
   }
   .vcccircle_img img{
     width: 100%;
+    border-radius: 14px;
+    height: 149px;
   }
   .vcccircle_content {
     padding: 10px;

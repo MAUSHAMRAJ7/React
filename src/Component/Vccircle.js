@@ -3,38 +3,67 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/scss/navigation';
+import { Cards } from './Cards';
 
 function Vccircle(props) {
   return (
-    <div className="vccircle_main">
+    <div className="vccircle_main" key={props.item.stories_list[0].feid}>
          <div className="container">
         <div className="col_content">
         <div className="col_content_heading1">
                 <div className="col_content_heading">
-                    <h3 className='col_heading' style={{"color":"#ffffff"}}>{props.head} <span><img src="./image/crown.png" alt="crown" /></span></h3>
+                    <h3 className='col_heading' style={{"color":"#ffffff"}}>{props.item.section_name} <span><img src="./image/crown.png" alt="crown" /></span></h3>
                     <button className="vcccircle_btn">SUBSCRIBE</button>
                 </div>
             </div>
-            <div className="cardimage_vccircle">
+            <div className="cardimage_vccircle"> 
 
             <Swiper
+            //  breakpoints={{
+            //   320:{
+            //     slidesPerView:1,
+            //     spaceBetween:20,
+            //   },
+            //   // 640:{
+            //   //   width :640,
+            //   //   slidesPerView:2,
+            //   //   spaceBetween:20,
+            //   // },
+            //   768:{
+            //     slidesPerView:2,
+            //     spaceBetween:20,
+            //   }
+            // }}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={10}
               slidesPerView={4}
               navigation
               >
-            {props.card.map((item) => {
+            {props.item.stories_list.map((item) => {
             return (<>
             <SwiperSlide className='swippervcccircle'>
               <div className='vcccircle_sub' style={{"margin-left":"0"}}>
-                <div className='vcccircle_img'>
+                {/* <div className='vcccircle_img'>
                 <img src={item.src} alt="" />
                 </div>
                 <div className='vcccircle_content'>
                 <h3 className="vcccircle_title">{item.title}</h3>
                 <p className="vcccircle_para">{item.para}</p>
                 <p className="vcccircle_author">{item.author}</p>   
-                </div>
+                </div> */}
+                <Cards
+                // clasName="vcccircle_sub"
+                imgclassdiv="vcccircle_img"
+                src={item.file_url}
+                contentcls="vcccircle_content"
+                titlecls="vcccircle_title"
+                heading={item.industry_details[0].name}
+                paracls="vcccircle_para"
+                title={item.title}
+                publish={item.publish}
+                authorcls="vcccircle_author"
+                author={item.author_details[0].name}
+                />
               </div>
               </SwiperSlide>
               </>
@@ -42,9 +71,6 @@ function Vccircle(props) {
             })}
             </Swiper>
             </div>
-        </div>
-        <div className='bottom_vcccircle'>
-        <button className="vcccircle_btn1">SUBSCRIBE</button>
         </div>
     </div>
     </div>

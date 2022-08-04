@@ -1,39 +1,47 @@
 import React from "react";
+import { Cards } from "./Cards";
 import Sideadd from "./Sideadd";
+import Signup from "./Signup";
 
 function Editor(props) {
   return (
-    <div className="container">
-      <div className="editor_main">
-        <h1 className="editor_head">{props.headtitle}</h1>
+    <div className="container" key={props.item.stories_list[1].feid}>
+      <div className="editor_main" >
         <div className="editor_submain">
         <div className="editor_content1">
+        <p className="editor_head">{props.item.section_name}</p>
           <div className="editor_premium" >
-            <img src={props.img} alt="editorimg" />
+            <img src={props.item.stories_list[0].file_url} alt="editorimg" />
             <span className="premium_logo">PREMIUM</span>
             </div>
-            <h5 className="heading_title">{props.lefttitle}</h5>
+            <div className="editor_contents">
+            <h5 className="heading_title">{props.item.stories_list[0].industry_details[0].name}</h5>
             <p className="editor-para">
-              {props.leftpara}
+              {props.item.stories_list[0].title}
             </p>
             <p className="author_para">
-              30 September <span>.Madhurima Nandy</span>
+              30 September <span>.{props.item.stories_list[0].author_details[0].name}</span>
             </p>
+            </div>
           </div>
           <div className="editor_content2">
-            {props.edit.map((item) => {
+            {props.item.stories_list.map((item,index) => {
+              if(index===0) return null;
               return (
-                <div className="card_content">
-                  <div className="card_content-response_img">
-                    <img src={item.src} alt="cardone_image" />
-                    
-                  </div>
-                  <div className="card_content_text">
-                    <h3 className="heading_title">{item.title}</h3>
-                    <p className="card-text2">{item.para}</p>
-                    <p className="author_para">{item.author}</p>
-                  </div>
-                </div>
+                <Cards
+                contimgMain="card_content"
+                imgclassdiv="card_content-response_img"
+                src={item.file_url}
+                contentcls="card_content_text"
+                titlecls="heading_title"
+                heading={item.industry_details[0].name}
+                paracls="card-text2"
+                title={item.title}
+                publish={item.publish}
+                authorcls="author_para"
+                author={item.author_details[0].name}
+                />
+
               );
             })}
            </div> 
@@ -43,6 +51,7 @@ function Editor(props) {
         </div>
 
       </div>
+      <Signup/>
     </div>
   );
 }
