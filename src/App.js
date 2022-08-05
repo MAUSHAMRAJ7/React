@@ -8,10 +8,10 @@ import Col from './Component/Col';
  import Editor from './Component/Editor';
 import Manufacturing from './Component/Manufacturing';
  import Navbar from './Component/Navbar';
-// import Signup from './Component/Signup';
-// import Stories from './Component/Stories';
-// import Footer from './Footer';
-// import Events from './Component/Events';
+import Signup from './Component/Signup';
+import Stories from './Component/Stories';
+import Footer from './Footer';
+import Events from './Component/Events';
 // import Col2 from './Component/Col2';
 // import {Eventdata,Updatedataresponse  }from './Database/Eventdata';
 // import Tmtdata from './Database/Tmtdata';
@@ -22,9 +22,10 @@ import Manufacturing from './Component/Manufacturing';
 // import Foundersdata from './Database/Foundersdata';
 import Vccircle from './Component/Vccircle';
 // import Vcccircledata from './Database/Vcccircledata';
-// import Vcc from './Component/Vcc';
+import Vcc from './Component/Vcc';
 // import {Editordata,Popular} from './Database/Editordata';
 import Follow from './Component/Follow';
+import Upcomingevent from './Component/Upcomingevent';
 // import Upcomingevent from './Component/Upcomingevent';
 
 function App() {
@@ -77,9 +78,10 @@ function App() {
         )
       }
 
-      if(index ===1){
+      if(item.section_slug ==="editors-pick"){
         return(<>
         <Editor item={item} />
+        <Signup/>
         <Follow/>
         </>
         )
@@ -98,9 +100,61 @@ function App() {
           </>
           );
         }
+        if(item.section_slug === "upcoming-events"){
+          return(<>
+          <Events/>
+          {/* <Upcomingevent/> */}
+          
+          </>);
+        }
+        if(item.section_slug === "founders"){
+          return(
+            <>
+            <Col item={item}/>
+            <Advertisment  img="./image/ad2.png"/>
+            </>
+          )
+        }
+        if(item.section_slug ==="most-popular"){
+          return(<>
+          <Editor item={item} />
+          </>
+          )
+          }
+          if(item.section_slug === "vcc-tv"){
+            return(<>
+            <Vcc item={item}/>
+            <Advertisment  img="./image/ad2.png"/>
+            </>);
+          }
+
+          if(item.section_slug === "tmt"){
+            return(<>
+             <Col item={item}/>
+            </>)
+          }
+
+          if(item.section_slug === "financials"){
+            return(<>
+             <Col item={item}/>
+             <Advertisment  img="./image/ad2.png"/>
+            </>)
+          }
+          if(item.section_slug === "more-stories"){
+            return(<>
+             <Stories item={item}/>
+            </>)
+          }
+
+          if(item.section_slug === "mergers-acquisitions"){
+            return(<>
+             <Col item={item}/>
+            </>)
+          }
     })
     
   }
+  <Footer/>
     </div>
   );
 }

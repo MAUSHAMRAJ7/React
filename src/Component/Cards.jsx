@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 
 export const Cards = (props) => {
   return (
@@ -10,7 +11,7 @@ export const Cards = (props) => {
             <div className={props.contentcls}>
                 <p className={props.titlecls}>{props.heading} </p>
                 <p className={props.paracls}>{props.title} </p>
-                <p className= {props.authorcls}>{props.publish}<span>{props.author}</span> </p>
+                <p className= {props.authorcls}>{moment(props.publish).format("Do MMM YYYY")}<span> {props.author}</span> </p>
             </div>
         </div>
         

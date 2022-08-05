@@ -1,11 +1,10 @@
 import React from "react";
 import { Cards } from "./Cards";
 import Sideadd from "./Sideadd";
-import Signup from "./Signup";
-
+import moment from "moment";
 function Editor(props) {
   return (
-    <div className="container" key={props.item.stories_list[1].feid}>
+    <div className="container" key={props.item.stories_list[0].feid}>
       <div className="editor_main" >
         <div className="editor_submain">
         <div className="editor_content1">
@@ -20,7 +19,7 @@ function Editor(props) {
               {props.item.stories_list[0].title}
             </p>
             <p className="author_para">
-              30 September <span>.{props.item.stories_list[0].author_details[0].name}</span>
+            {moment(props.publish).format("Do MMM YYYY")} <span>  {props.item.stories_list[0].author_details[0].name}</span>
             </p>
             </div>
           </div>
@@ -51,7 +50,7 @@ function Editor(props) {
         </div>
 
       </div>
-      <Signup/>
+      
     </div>
   );
 }

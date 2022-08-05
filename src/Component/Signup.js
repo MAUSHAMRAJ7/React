@@ -11,7 +11,7 @@ function Signup() {
     }
 
   return (
-    // <div className="container">
+    <div className="container">
         <div className="signup_main">
             <div className="envelop">
                 <div>

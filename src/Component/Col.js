@@ -30,7 +30,7 @@ function Col(props) {
               navigation
             >
               {props.item.stories_list.map((item,index) => {
-                if(index===0) return null;
+                // if(index===0) return null;
                 return (
                   <SwiperSlide>
                     <Cards
@@ -43,7 +43,7 @@ function Col(props) {
                     paracls="col_text"
                     title={item.title}
                     publish={item.publish}
-                    authorcls="col_author"
+                    authorcls="author_para"
                     author={item.author_details[0].name}
                     
                     />

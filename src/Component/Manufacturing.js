@@ -1,6 +1,7 @@
 import React from "react";
-import Advertisment from "./Advertisment";
+// import Advertisment from "./Advertisment";
 import { Cards } from "./Cards";
+import moment from "moment";
 
 function Manufacturing(props) {
   return (
@@ -20,7 +21,7 @@ function Manufacturing(props) {
           </p>
 
           <p className="manu_author_para">
-            {props.item.stories_list[0].publish}<span>.{props.item.stories_list[0].author_details[0].name}</span>
+          {moment(props.publish).format("Do MMM YYYY")}<span>.  {props.item.stories_list[0].author_details[0].name}</span>
           </p>
 
           <button className="manufacturing_button">READ MORE</button>
@@ -56,7 +57,6 @@ function Manufacturing(props) {
             
             
       </div>
-      <Advertisment  img="./image/ad2.png"/>
       <div className="secondadvertisment">
         <h5 className="sideadvertisment_response " style={{textAlign: 'center'}}>Advertisement</h5>
         <img className="sideadd_img" src="./image/sideadd.png" alt="addimage" />

@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/scss/navigation';
+import {Eventdata}from '../Database/Eventdata';
+import moment from 'moment';
 
 function Events(props) {
   return (
@@ -10,18 +12,18 @@ function Events(props) {
         <div className="col_content col_content-responsive">
         <div className="col_content_heading1">
         <div className="col_content_heading">
-                    <h3 className='col_heading'>{props.title}</h3>
+                    <h3 className='col_heading'>Upcoming Events</h3>
                     <p className='col_para'>View More <span><img src="./image/icon-right.png" alt="icondown" /></span></p>
                 </div>
             </div>
             <div className="cardimage">
             <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={4}
+            spaceBetween={10}
             slidesPerView={3}
             navigation
             >
-            {props.card.map((item) => {
+            {Eventdata.map((item) => {
             return (<>
             <SwiperSlide>
               <div className='event_sub' style={{"margin-left":"0"}}>
@@ -30,7 +32,7 @@ function Events(props) {
                 </div>
                 <div className="event_content">
                 <p className="event_para">{item.para}</p>
-                <p className="event_author">{item.author}</p>   
+                <p className="event_author">{moment(props.publish).format("Do MMM YYYY")}<span>{item.author}</span></p>   
                 </div>
               </div>
               </SwiperSlide>
