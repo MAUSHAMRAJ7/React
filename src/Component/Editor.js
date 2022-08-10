@@ -2,6 +2,8 @@ import React from "react";
 import { Cards } from "./Cards";
 import Sideadd from "./Sideadd";
 import moment from "moment";
+import {Link} from 'react-router-dom'
+import PremiumImg from "./PremiumImg";
 function Editor(props) {
   return (
     <div className="container" key={props.item.stories_list[0].feid}>
@@ -10,16 +12,31 @@ function Editor(props) {
         <div className="editor_content1">
         <p className="editor_head">{props.item.section_name}</p>
           <div className="editor_premium" >
+          <Link 
+              to={props?.item.stories_list[0].slug || "" }>
             <img src={props.item.stories_list[0].file_url} alt="editorimg" />
-            <span className="premium_logo">PREMIUM</span>
+            </Link>
+            {/* <span className="premium_logo">PREMIUM</span> */}
             </div>
             <div className="editor_contents">
-            <h5 className="heading_title">{props.item.stories_list[0].industry_details[0].name}</h5>
+            <h5 className="heading_title">
+              <Link 
+              to={props?.item.stories_list[0].industry_details[0].slug || "" }>
+            {props.item.stories_list[0].industry_details[0].name}
+            </Link></h5>
             <p className="editor-para">
+              <Link 
+              to={props?.item.stories_list[0].slug || "" }>
               {props.item.stories_list[0].title}
+              </Link>
             </p>
             <p className="author_para">
-            {moment(props.publish).format("Do MMM YYYY")} <span>  {props.item.stories_list[0].author_details[0].name}</span>
+            {moment(props.publish).format("Do MMM YYYY")} <span>  
+              <Link 
+              to={props?.item.stories_list[0].author_details[0].slug || "" }>
+              {props.item.stories_list[0].author_details[0].name}
+              </Link>
+              </span>
             </p>
             </div>
           </div>
@@ -27,7 +44,12 @@ function Editor(props) {
             {props.item.stories_list.map((item,index) => {
               if(index===0) return null;
               return (
+                <div className="editior_premium">
                 <Cards
+                authorslug={item.author_details[0].slug}
+                headingslug={item.industry_details[0].slug}
+                titleslug={item.slug}
+                imgSlug={item.slug}
                 contimgMain="card_content"
                 imgclassdiv="card_content-response_img"
                 src={item.file_url}
@@ -40,7 +62,8 @@ function Editor(props) {
                 authorcls="author_para"
                 author={item.author_details[0].name}
                 />
-
+                {item.premium==="1"?<PremiumImg premiumclsname="premiumeditor"/>:null}
+                </div>
               );
             })}
            </div> 

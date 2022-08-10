@@ -4,6 +4,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/scss/navigation';
 import { Cards } from './Cards';
+import PremiumImg from './PremiumImg';
 
 function Vccircle(props) {
   return (
@@ -43,6 +44,7 @@ function Vccircle(props) {
             return (<>
             <SwiperSlide className='swippervcccircle'>
               <div className='vcccircle_sub' style={{"margin-left":"0"}}>
+              <div className="editior_premium">
                 {/* <div className='vcccircle_img'>
                 <img src={item.src} alt="" />
                 </div>
@@ -53,6 +55,10 @@ function Vccircle(props) {
                 </div> */}
                 <Cards
                 // clasName="vcccircle_sub"
+                authorslug={item.author_details[0].slug}
+                headingslug={item.industry_details[0].slug}
+                titleslug={item.slug}
+                imgSlug={item.slug}
                 imgclassdiv="vcccircle_img"
                 src={item.file_url}
                 contentcls="vcccircle_content"
@@ -64,6 +70,8 @@ function Vccircle(props) {
                 authorcls="vcccircle_author"
                 author={item.author_details[0].name}
                 />
+                 {item.premium==="1"?<PremiumImg premiumclsname="premiumvcccircle"/>:null}
+              </div>
               </div>
               </SwiperSlide>
               </>

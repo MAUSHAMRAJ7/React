@@ -4,6 +4,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css";
 import "swiper/scss/navigation";
 import { Cards } from "./Cards";
+import PremiumImg from "./PremiumImg";
 
 function Col(props) {
   return (
@@ -29,36 +30,32 @@ function Col(props) {
               slidesPerView={4}
               navigation
             >
-              {props.item.stories_list.map((item,index) => {
+              {props.item.stories_list.map((item, index) => {
                 // if(index===0) return null;
                 return (
                   <SwiperSlide>
-                    <Cards
-                    contimgMain="col_content_img"
-                    imgclassdiv="col_content_img_main"
-                    src={item.file_url}
-                    contentcls="col_content_img_content"
-                    // titlecls="heading_title"
-                    // heading={item.industry_details[0].name}
-                    paracls="col_text"
-                    title={item.title}
-                    publish={item.publish}
-                    authorcls="author_para"
-                    author={item.author_details[0].name}
-                    
-                    />
-                    {/* <div
-                      className="col_content_img"
-                      style={{ "margin-left": "0" }}
-                    >
-                      <div className="col_content_img_main">
-                      <img src={item.src} alt="" />
-                      </div>
-                      <div className="col_content_img_content">
-                      <p className="col_text">{item.para}</p>
-                      <p className="col_author">{item.author}</p>
-                      </div>
-                    </div> */}
+                    <div className="editior_premium">
+                      <Cards
+                        contimgMain="col_content_img"
+                        authorslug={item.author_details[0].slug}
+                        headingslug={item.industry_details[0].slug}
+                        titleslug={item.slug}
+                        imgSlug={item.slug}
+                        imgclassdiv="col_content_img_main"
+                        src={item.file_url}
+                        contentcls="col_content_img_content"
+                        // titlecls="heading_title"
+                        // heading={item.industry_details[0].name}
+                        paracls="col_text"
+                        title={item.title}
+                        publish={item.publish}
+                        authorcls="author_para"
+                        author={item.author_details[0].name}
+                      />
+                      {item.premium === "1" ? (
+                        <PremiumImg premiumclsname="premiumfounder" />
+                      ) : null}
+                    </div>
                   </SwiperSlide>
                 );
               })}

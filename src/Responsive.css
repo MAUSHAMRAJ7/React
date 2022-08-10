@@ -1,6 +1,6 @@
 @media only screen and(min-width: 768px) and (max-width: 998px) {
   .Maincontainer {
-    width: 998px;
+    min-width: 998px !important;
   }
   html {
     font-size: 55%;
@@ -47,9 +47,28 @@
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .Maincontainer{
-        width:768px;
+        min-width:768px !important;
 
     }
+    .premiumeconomy {
+      position: absolute;
+      background: transparent linear-gradient(90deg, #fe8c00 0%, #f83600 100%);
+      /* left: 269px; */
+      top: 162px;
+      right: 300px;
+      text-transform: uppercase;
+      font-size: 18px;
+      color: white;
+  }
+  .premiumeditor {
+    position: absolute;
+    background: transparent linear-gradient(90deg, #fe8c00 0%, #f83600 100%);
+    bottom: 15px;
+    left: 100px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
   .container {
     margin-left: 71px;
     margin-right: 71px;
@@ -86,9 +105,10 @@
     margin-top: 2.4rem;
   }
   .manu_author_para {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     font-weight: normal;
     margin-top: 2.6rem;
+    color: grey;
   }
   .manu_subcontent {
     text-align: left;
@@ -115,6 +135,9 @@
   .economy_card {
     display: flex;
     width: 100%;
+  }
+  .economy-card_img_main{
+    display: flex;
   }
   .title_response {
     font-size: 3.4rem;
@@ -213,12 +236,14 @@
   .author_para {
     font-size: 15px;
   }
-  .card-text2 {
-    font-size: 3.2rem;
-    width: 100%;
-  }
+
   .heading_title {
     font-size: 20px;
+  }
+  .card-text2{
+    font-size: 18px;
+    width: 100%;
+    font-weight: 600 !important;
   }
   .card_content {
     width: 100%;
@@ -270,6 +295,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
+    font-weight: 500;
   }
   .col_para {
     font-size: 14px;
@@ -284,7 +310,7 @@
     font-size: 5.5rem;
   }
   .partner_heading p {
-    font-size: 8.2rem;
+    font-size: 18px;
   }
   .partner_heading span {
     width: 2.5rem;
@@ -525,9 +551,6 @@ flex-wrap: wrap;
     border-bottom: 2px solid #767676;
     padding: 10px 0px;
   }
-  /* .nav_close{
-    text-align: left;
-  } */
   .nav-cross{
     float: right;
   }
