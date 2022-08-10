@@ -72,7 +72,8 @@
   .container {
     margin-left: 71px;
     margin-right: 71px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    padding-top:0px;
   }
   html {
     font-size: 30%;
