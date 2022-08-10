@@ -43,7 +43,7 @@ function Manufacturing(props) {
         <div className="manufacturing_right">
         <Link 
               to={props?.item.stories_list[0].slug || "" }>
-        <img src={props.item.stories_list[0].file_url} />
+        <img src={props.item.stories_list[0].file_url} alt="img" />
         </Link>
         </div>
       </div>
