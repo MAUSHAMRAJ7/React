@@ -23,18 +23,20 @@ html {
 .container {
   margin-left: 142px;
   margin-right: 142px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  padding-top: 40px;
 }
 
 /* Navbar css */
 .navbar_container {
   box-shadow: 0px 2px 4px #0000001a;
-  position: fixed;
+  position: sticky;
   width: 100%;
-  z-index: 8;
+  z-index: 1000;
   background-color: #ffff;
   top: 0;
   height: auto;
+  margin: 0px;
 }
 .nav-container {
   width: auto;
@@ -44,7 +46,7 @@ html {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin-top: 51px;
+  /* margin-top: 51px; */
 }
 .logo-img {
   width: 15%;
@@ -580,9 +582,9 @@ html {
   display: flex;
   margin-top: 3rem;
 }
-.col_content {
+/* .col_content {
   margin: 50px 0px;
-}
+} */
 .col_para {
   font-size: 1.2rem;
   font-weight: medium;
@@ -875,4 +877,44 @@ color: #222222; */
   font-size: 20px !important;
   font-weight: 600 !important;
   color: white;
+}
+
+.shwNme {
+  display: none;
+}
+.plusONE:hover {
+  cursor: pointer;
+}
+.plusONE:hover+.shwNme {
+  display: block !important;
+  position: absolute;
+  background: #fff;
+  bottom: 33px;
+  right: 33px;
+  padding: 8px 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ 
+/* Loader-- */
+.loader {
+  display: block;
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 3s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

@@ -48,9 +48,17 @@ function Col(props) {
                         // heading={item.industry_details[0].name}
                         paracls="col_text"
                         title={item.title}
+                        nameshow="shwNme"
+                        plusone="plusONE"
                         publish={item.publish}
                         authorcls="author_para"
                         author={item.author_details[0].name}
+                        incrval={
+                          item.author_details.length > 1
+                            ? item.author_details[1].name
+                            : " "
+                        }
+                        one={item.author_details.length > 1 ? "+1" : null}
                       />
                       {item.premium === "1" ? (
                         <PremiumImg premiumclsname="premiumfounder" />
