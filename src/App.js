@@ -25,7 +25,7 @@ import Vccircle from './Component/Vccircle';
 import Vcc from './Component/Vcc';
 // import {Editordata,Popular} from './Database/Editordata';
 import Follow from './Component/Follow';
-import Upcomingevent from './Component/Upcomingevent';
+// import Upcomingevent from './Component/Upcomingevent';
 // import Upcomingevent from './Component/Upcomingevent';
 
 function App() {
@@ -151,6 +151,7 @@ function App() {
              <Col item={item}/>
             </>)
           }
+          return null;
     })
     
   }
