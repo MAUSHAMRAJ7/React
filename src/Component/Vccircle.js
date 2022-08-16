@@ -24,21 +24,16 @@ function Vccircle(props) {
           </div>
           <div className="cardimage_vccircle">
             <Swiper
-              //  breakpoints={{
-              //   320:{
-              //     slidesPerView:1,
-              //     spaceBetween:20,
-              //   },
-              //   // 640:{
-              //   //   width :640,
-              //   //   slidesPerView:2,
-              //   //   spaceBetween:20,
-              //   // },
-              //   768:{
-              //     slidesPerView:2,
-              //     spaceBetween:20,
-              //   }
-              // }}
+              breakpoints={{
+                998:{
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+              }}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={10}
               slidesPerView={4}

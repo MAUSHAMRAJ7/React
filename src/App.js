@@ -38,11 +38,11 @@ function App() {
       
       {
     data.map((item,index)=>{
-      if(index ===0){
+      if(item.section_slug ==="top-stories"){
         return(<>
-        <Advertisment img="./image/ad1.png" />
+        <Advertisment advertiseclass="Advertis1" img="./image/ad1.png" />
           <Manufacturing item={item} />
-          <Advertisment  img="./image/ad2.png"/>
+          <Advertisment advertiseclass="advertis" img="./image/ad2.png"/>
         </>
         )
       }
@@ -59,7 +59,7 @@ function App() {
           return(
             <>
             <Col item={item}/>
-            <Advertisment  img="./image/ad2.png"/>
+            <Advertisment advertiseclass="advertis"  img="./image/ad2.png"/>
             </>
           )
         }
@@ -80,7 +80,7 @@ function App() {
           return(
             <>
             <Col item={item}/>
-            <Advertisment  img="./image/ad2.png"/>
+            <Advertisment advertiseclass="advertis" img="./image/ad2.png"/>
             </>
           )
         }
@@ -93,7 +93,7 @@ function App() {
           if(item.section_slug === "vcc-tv"){
             return(<>
             <Vcc item={item}/>
-            <Advertisment  img="./image/ad2.png"/>
+            <Advertisment advertiseclass="advertis" img="./image/ad2.png"/>
             </>);
           }
 
@@ -106,7 +106,7 @@ function App() {
           if(item.section_slug === "financials"){
             return(<>
              <Col item={item}/>
-             <Advertisment  img="./image/ad2.png"/>
+             <Advertisment advertiseclass="advertis"  img="./image/ad2.png"/>
             </>)
           }
           if(item.section_slug === "more-stories"){

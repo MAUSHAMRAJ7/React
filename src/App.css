@@ -105,6 +105,14 @@ html {
 
 /* Add css */
 
+.Advertis1{
+  width: 100%;
+  height: auto;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  margin-top: 140px; 
+}
 .advertis {
   /* border: 1px solid green; */
   /* width: 1156px; */
@@ -113,7 +121,7 @@ html {
   background: #f0f0f0;
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  /* margin-top: 40px; */
 }
 .advertis_text {
   text-align: center;
@@ -155,7 +163,7 @@ html {
   font-size: 1.6rem;
   font-weight: normal;
   margin-top: 1.4rem;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   font-size: 16px;
@@ -379,6 +387,7 @@ html {
 .follow_para {
   font-size: 1.2rem;
   color: #484848;
+  padding: 5px;
 }
 .info h3 {
   font-size: 22px;
@@ -613,13 +622,14 @@ html {
   margin-top: 1.4rem;
 }
 .col_content_img {
-  /* width: 225px; */
+  /* width: 286px !important; */
   width: 100%;
   padding: 10px;
   height: 286px;
   border: 0.1rem solid #0000001a;
   border-radius: 1.2rem;
 }
+
 .col_content_img img {
   width: 100%;
 }
