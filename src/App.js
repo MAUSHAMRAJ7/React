@@ -15,7 +15,7 @@ import Vccircle from './Component/Vccircle';
 import Vcc from './Component/Vcc';
 import Follow from './Component/Follow';
 // import Loader from './Loader';
-import Manuskeleton from './Skeleton/Manuskeleton';
+// import Manuskeleton from './Skeleton/Manuskeleton';
 
 function App() {
   const [data, setData] = useState([]);
@@ -39,7 +39,7 @@ function App() {
       
      {load ?
       <>
-      <Manuskeleton/>
+      {/* <Manuskeleton/> */}
       </>:
       <>
       {
