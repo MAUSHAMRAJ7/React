@@ -14,7 +14,7 @@ import Events from './Component/Events';
 import Vccircle from './Component/Vccircle';
 import Vcc from './Component/Vcc';
 import Follow from './Component/Follow';
-// import Loader from './Loader';
+import Loader from './Loader';
 // import Manuskeleton from './Skeleton/Manuskeleton';
 
 function App() {
@@ -40,6 +40,7 @@ function App() {
      {load ?
       <>
       {/* <Manuskeleton/> */}
+      <Loader/>
       </>:
       <>
       {
