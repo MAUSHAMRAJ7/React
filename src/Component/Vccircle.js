@@ -24,16 +24,16 @@ function Vccircle(props) {
           </div>
           <div className="cardimage_vccircle">
             <Swiper
-              breakpoints={{
-                998:{
-                  slidesPerView: 4,
-                  spaceBetween: 20,
-                },
-                320: {
-                  slidesPerView: 2,
-                  spaceBetween: 40,
-                },
-              }}
+              // breakpoints={{
+                // 998:{
+                //   slidesPerView: 4,
+                //   spaceBetween: 20,
+                // },
+              //   320: {
+              //     slidesPerView: 2,
+              //     spaceBetween: 40,
+              //   },
+              // }}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={10}
               slidesPerView={4}
@@ -92,6 +92,9 @@ function Vccircle(props) {
               })}
             </Swiper>
           </div>
+        </div>
+        <div className='bottom_vcccircle'>
+        <button className="vcccircle_btn1">SUBSCRIBE</button>
         </div>
       </div>
     </div>

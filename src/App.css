@@ -112,6 +112,7 @@ html {
   display: flex;
   justify-content: center;
   margin-top: 140px; 
+  display: block;
 }
 .advertis {
   /* border: 1px solid green; */

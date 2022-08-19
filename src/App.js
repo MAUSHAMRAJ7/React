@@ -14,28 +14,34 @@ import Events from './Component/Events';
 import Vccircle from './Component/Vccircle';
 import Vcc from './Component/Vcc';
 import Follow from './Component/Follow';
-import Loader from './Loader';
+// import Loader from './Loader';
+import Manuskeleton from './Skeleton/Manuskeleton';
 
 function App() {
   const [data, setData] = useState([]);
-  const [load, setLoad] =useState(true);
+  const [load, setLoading] =useState(true);
 
   useEffect(() => {
-    axios
+    setTimeout(() =>{
+      axios
       .get("https://run.mocky.io/v3/25b66855-89a3-45a5-8db6-85fc85041185")
       .then((response) => {
         console.log(response.data.section_list[0].stories_list);
-        setLoad(false);
+        setLoading(false);
         setData(response.data.section_list);
-      });
-  });
+      },3000);
+    })
+  },[]);
   return (
     
     <div className="Maincontainer">
       <Navbar/>
-     {load ? <Loader/> : null}
       
-      
+     {load ?
+      <>
+      <Manuskeleton/>
+      </>:
+      <>
       {
     data.map((item,index)=>{
       if(item.section_slug ==="top-stories"){
@@ -72,7 +78,6 @@ function App() {
         if(item.section_slug === "upcoming-events"){
           return(<>
           <Events/>
-          {/* <Upcomingevent/> */}
           
           </>);
         }
@@ -118,18 +123,18 @@ function App() {
           if(item.section_slug === "mergers-acquisitions"){
             return(<>
              <Col item={item}/>
-             <Footer/>
             </>)
           }
-          return null;
     })
     
+  }
+  </>
   }
   
 
 
   
-  {/* <Footer/> */}
+  <Footer/>
     </div>
   );
 }

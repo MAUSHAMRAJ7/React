@@ -30,16 +30,17 @@ function Col(props) {
               slidesPerView={4}
               navigation
 
-              breakpoints={{
-                998:{
-                  slidesPerView: 4,
-                  spaceBetween: 20,
-                },
-                320: {
-                  slidesPerView: 2,
-                  spaceBetween: 40,
-                },
-              }}
+              // breakpoints={{
+              //   998:{
+              //     slidesPerView: 4,
+              //     spaceBetween: 20,
+              //   },
+                
+              //   320: {
+              //     slidesPerView: 2,
+              //     spaceBetween: 40,
+              //   },
+              // }}
             >
               {props.item.stories_list.map((item, index) => {
                 // if(index===0) return null;
