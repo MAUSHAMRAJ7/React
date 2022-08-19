@@ -43,7 +43,8 @@ function App() {
       </>:
       <>
       {
-    data.map((item,index)=>{
+    // eslint-disable-next-line array-callback-return
+    data.map((item) => {
       if(item.section_slug ==="top-stories"){
         return(<>
         <Advertisment advertiseclass="Advertis1" img="./image/ad1.png" />
