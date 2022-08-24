@@ -30,17 +30,24 @@ function Col(props) {
               slidesPerView={4}
               navigation
 
-              // breakpoints={{
-              //   998:{
-              //     slidesPerView: 4,
-              //     spaceBetween: 20,
-              //   },
-                
-              //   320: {
-              //     slidesPerView: 2,
-              //     spaceBetween: 40,
-              //   },
-              // }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+                768: {
+                  slidesPerView: 2.5,
+                  spaceBetween: 20,
+                },
+                900:{
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                999:{
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                }
+              }}
             >
               {props.item.stories_list.map((item, index) => {
                 // if(index===0) return null;
@@ -48,6 +55,7 @@ function Col(props) {
                   <SwiperSlide>
                     <div className="editior_premium">
                       <Cards
+                        className="col_content_Main"
                         contimgMain="col_content_img"
                         authorslug={item.author_details[0].slug}
                         headingslug={item.industry_details[0].slug}
@@ -63,7 +71,7 @@ function Col(props) {
                         nameshow="shwNme"
                         plusone="plusONE"
                         publish={item.publish}
-                        authorcls="author_para"
+                        authorcls="col_author_para1"
                         author={item.author_details[0].name}
                         incrval={
                           item.author_details.length > 1

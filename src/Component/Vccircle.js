@@ -24,16 +24,28 @@ function Vccircle(props) {
           </div>
           <div className="cardimage_vccircle">
             <Swiper
-              // breakpoints={{
-                // 998:{
-                //   slidesPerView: 4,
-                //   spaceBetween: 20,
-                // },
-              //   320: {
-              //     slidesPerView: 2,
-              //     spaceBetween: 40,
-              //   },
-              // }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+                768: {
+                  slidesPerView: 2.5,
+                  spaceBetween: 20,
+                },
+                900:{
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                999:{
+                  slidesPerView: 3.1,
+                  spaceBetween: 10,
+                },
+                1200:{
+                  slidesPerView: 4,
+                  spaceBetween: 10,
+                }
+              }}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={10}
               slidesPerView={4}
@@ -47,7 +59,7 @@ function Vccircle(props) {
                         className="vcccircle_sub"
                         style={{ "margin-left": "0" }}
                       >
-                        <div className="editior_premium">
+                        {/* <div className="editior_premium"> */}
                           {/* <div className='vcccircle_img'>
                 <img src={item.src} alt="" />
                 </div>
@@ -58,6 +70,8 @@ function Vccircle(props) {
                 </div> */}
                           <Cards
                             // clasName="vcccircle_sub"
+                            // className="vcccircle_card_main"
+                            // contimgMain="vcccircle_card_main"
                             authorslug={item.author_details[0].slug}
                             headingslug={item.industry_details[0].slug}
                             titleslug={item.slug}
@@ -84,7 +98,7 @@ function Vccircle(props) {
                           {item.premium === "1" ? (
                             <PremiumImg premiumclsname="premiumvcccircle" />
                           ) : null}
-                        </div>
+                        {/* </div> */}
                       </div>
                     </SwiperSlide>
                   </>

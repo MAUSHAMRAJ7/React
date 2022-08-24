@@ -5,7 +5,7 @@ function Advertisment(props) {
     <div className="container">
     <div className={props.advertiseclass}>
     
-    <div>
+    <div className='add-content'>
     <p className="advertis_text">Advertisement</p>
         <img className="advertis_img"  src={props.img} alt="addimage" width={props.width}/>
     </div>

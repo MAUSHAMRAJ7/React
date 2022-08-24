@@ -24,11 +24,10 @@ function Manufacturing(props) {
             </Link>
           </h3>
 
-          <p className="manu_left_para">
+          <p className="manu_left_para1">
             {props.item.stories_list[0].summary}
           </p>
-
-          <p className="manu_author_para">
+          <p className="manu_author_para1">
           {moment(props.publish).format("Do MMM YYYY")}<span>.
           <Link 
               to={props?.item.stories_list[0].author_details[0].slug || "" }>

@@ -2,6 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
+    // <div className="container">
     <div className="Container-footer">
         <div className="Container-footer-inner">
             <div className="footer_logo1">
@@ -45,6 +46,7 @@ function Footer() {
             </div>
         </div>
     </div>
+    // </div>
   )
 }
 
