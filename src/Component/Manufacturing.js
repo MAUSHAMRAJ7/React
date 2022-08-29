@@ -27,14 +27,18 @@ function Manufacturing(props) {
           <p className="manu_left_para1">
             {props.item.stories_list[0].summary}
           </p>
-          <p className="manu_author_para1">
-          {moment(props.publish).format("Do MMM YYYY")}<span>.
-          <Link 
+
+            <ul className="manu_author_para1">
+              <li className="li_author">
+              {moment(props.publish).format("Do MMM ")}
+              </li>
+              <li>
+              <Link 
               to={props?.item.stories_list[0].author_details[0].slug || "" }>
             {props.item.stories_list[0].author_details[0].name}
             </Link>
-            </span>
-          </p>
+              </li>
+            </ul>
 
           <button className="manufacturing_button">READ MORE</button>
         </div>
@@ -53,7 +57,9 @@ function Manufacturing(props) {
           
                 {props.item.stories_list.map((item,index) =>{
                   if(index===0) return null;
-                  return(<div className="editior_premium">
+                  return(
+                  <>
+                  {/* <div className="editior_premium1"> */}
                     <Cards
                     authorslug={item.author_details[0].slug}
                     clasName="economy_card"
@@ -69,11 +75,15 @@ function Manufacturing(props) {
                     paracls="manu_left_para"
                     title={item.title}
                     publish={item.publish}
+                    authordate="li_topstories_author_card"
                     authorcls="manu_author_para"
                     author={item.author_details[0].name}
+                    premium={item.premium}
+                    imgcls="economy_resimg_img"
                     />
-                    {item.premium==="1"?<PremiumImg premiumclsname="premiumeconomy"/>:null}
-                    </div>
+                    {/* {item.premium==="1"?<PremiumImg premiumclsname="premiumeconomy"/>:null} */}
+                    {/* </div> */}
+                    </>
                   )
                 })}  
             

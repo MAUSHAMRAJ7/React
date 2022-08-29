@@ -48,15 +48,24 @@ function Vcc(props) {
               </Link>
             </h3>
             <p className="card-texttv">{props.item.stories_list[0].summary}</p>
-            <p className="author_para">
-              {moment(props.publish).format("Do MMM YYYY")}
-              <span>.
+            <ul className="author_para">
+              <li className="li_author"> {moment(props.publish).format("Do MMM ")}</li>
+              <li>
+              <Link 
+              to={props?.item.stories_list[0].author_details[0].slug || "" }>
+              {props.item.stories_list[0].author_details[0].name}
+              </Link>
+              </li>
+            </ul>
+            {/* <p className="author_para">
+              {moment(props.publish).format("Do MMM ")}
+              <span>
               <Link 
               to={props?.item.stories_list[0].author_details[0].slug || "" }>
               {props.item.stories_list[0].author_details[0].name}
               </Link>
               </span>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

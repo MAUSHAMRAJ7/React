@@ -16,6 +16,8 @@ import Vcc from './Component/Vcc';
 import Follow from './Component/Follow';
 // import Loader from './Loader';
 import Manuskeleton from './Skeleton/Manuskeleton';
+import Upcomingevent from './Component/Upcomingevent';
+import {Updatedataresponse} from './Database/Eventdata'
 
 function App() {
   const [data, setData] = useState([]);
@@ -49,7 +51,7 @@ function App() {
         return(<>
         <Advertisment advertiseclass="Advertis1" img="./image/ad1.png" />
           <Manufacturing item={item} />
-          <Advertisment advertiseclass="advertis" img="./image/ad2.png"/>
+          <Advertisment advertiseclass="Advertis2" img="./image/add5.png" />
         </>
         )
       }
@@ -66,7 +68,7 @@ function App() {
           return(
             <>
             <Col item={item}/>
-            <Advertisment advertiseclass="advertis"  img="./image/ad2.png"/>
+            <Advertisment advertiseclass="Advertis2" img="./image/add5.png" />
             </>
           )
         }
@@ -79,6 +81,7 @@ function App() {
         if(item.section_slug === "upcoming-events"){
           return(<>
           <Events/>
+          <Upcomingevent card={Updatedataresponse}/>
           
           </>);
         }
@@ -86,7 +89,7 @@ function App() {
           return(
             <>
             <Col item={item}/>
-            <Advertisment advertiseclass="advertis" img="./image/ad2.png"/>
+            <Advertisment advertiseclass="Advertis2" img="./image/add5.png" />
             </>
           )
         }
@@ -99,7 +102,7 @@ function App() {
           if(item.section_slug === "vcc-tv"){
             return(<>
             <Vcc item={item}/>
-            <Advertisment advertiseclass="advertis" img="./image/ad2.png"/>
+            <Advertisment advertiseclass="Advertis2" img="./image/add5.png" />
             </>);
           }
 
@@ -112,7 +115,7 @@ function App() {
           if(item.section_slug === "financials"){
             return(<>
              <Col item={item}/>
-             <Advertisment advertiseclass="advertis"  img="./image/ad2.png"/>
+             <Advertisment advertiseclass="Advertis2" img="./image/add5.png" />
             </>)
           }
           if(item.section_slug === "more-stories"){

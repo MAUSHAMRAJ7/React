@@ -27,6 +27,7 @@ function Stories(props) {
                       contentcls="stories_card_text"
                       titlecls="morestories_title"
                       paracls="morestories_title_para"
+                      authordate="stories_li_author"
                       authorcls="morestories_author_para"
                     />
                     {item.premium==="1"?<PremiumImg premiumclsname="premiumstories"/>:null}

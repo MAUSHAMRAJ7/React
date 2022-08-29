@@ -27,26 +27,39 @@ function Col(props) {
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={10}
-              slidesPerView={4}
+              slidesPerView={4.3}
               navigation
 
               breakpoints={{
                 320: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                   spaceBetween: 40,
                 },
-                768: {
-                  slidesPerView: 2.5,
-                  spaceBetween: 20,
+                400:{
+                  slidesPerView: 1.5,
+                  spaceBetween: 40,
                 },
-                900:{
+                668:{
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                768: {
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
-                999:{
-                  slidesPerView: 4,
+                // 900:{
+                //   slidesPerView: 3,
+                //   spaceBetween: 20,
+                // },
+                998:{
+                  slidesPerView:4,
+                  spaceBetween: 20,
+                },
+                1024:{
+                  slidesPerView: 4.3,
                   spaceBetween: 20,
                 }
+
               }}
             >
               {props.item.stories_list.map((item, index) => {
@@ -72,6 +85,7 @@ function Col(props) {
                         plusone="plusONE"
                         publish={item.publish}
                         authorcls="col_author_para1"
+                        authordate="col_li_author"
                         author={item.author_details[0].name}
                         incrval={
                           item.author_details.length > 1

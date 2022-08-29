@@ -21,6 +21,11 @@ function Navbar() {
             <a href="/" onClick={show}>
               <i class="fa-solid fa-bars"></i>
             </a>
+            {/* <img
+            src="./image/logo.png"
+            className="logo-img res-logo-img"
+            alt="logo"
+          /> */}
             {/* <button onClick={show}> <i class="fa-solid fa-bars"></i></button> */}
           </div>
           <img
@@ -30,12 +35,22 @@ function Navbar() {
           />
           <ul>
             <li className="sub-nav-li1 sub-nav-li-hide">
-              <img
+             <span>
+             <img
                 src="./image/crown.png"
                 className="nav-img menu-nav-img"
                 alt="icon"
               />
+             </span>
+              {/* <img
+                src="./image/crown.png"
+                className="nav-img menu-nav-img"
+                alt="icon"
+              /> */}
+              <span>
               Subscribe
+              </span>
+            
             </li>
           </ul>
 

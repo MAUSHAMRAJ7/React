@@ -30,14 +30,16 @@ function Editor(props) {
               {props.item.stories_list[0].title}
               </Link>
             </p>
-            <p className="author_para">
-            {moment(props.publish).format("Do MMM YYYY")} <span>  
-              <Link 
+
+            <ul className="author_para">
+              <li className="li_author">{moment(props.publish).format("Do MMM YYYY")}</li>
+              <li>  <Link 
               to={props?.item.stories_list[0].author_details[0].slug || "" }>
               {props.item.stories_list[0].author_details[0].name}
               </Link>
-              </span>
-            </p>
+              </li>
+            </ul>
+    
             </div>
           </div>
           <div className="editor_content2">
@@ -59,6 +61,7 @@ function Editor(props) {
                 paracls="card-text2"
                 title={item.title}
                 publish={item.publish}
+                authordate="editior_li_author"
                 authorcls="author_para"
                 author={item.author_details[0].name}
                 />

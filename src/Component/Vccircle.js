@@ -26,29 +26,33 @@ function Vccircle(props) {
             <Swiper
               breakpoints={{
                 320: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                   spaceBetween: 40,
                 },
-                768: {
-                  slidesPerView: 2.5,
-                  spaceBetween: 20,
+                400:{
+                  slidesPerView:1.5,
+                  spaceBetween:40,
                 },
-                900:{
+                768: {
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
-                999:{
-                  slidesPerView: 3.1,
+                668:{
+                  slidesPerView: 2,
                   spaceBetween: 10,
                 },
+                998:{
+                  slidesPerView:4,
+                  spaceBetween: 20,
+                },
                 1200:{
-                  slidesPerView: 4,
-                  spaceBetween: 10,
+                  slidesPerView: 4.5,
+                  spaceBetween: 20,
                 }
               }}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={10}
-              slidesPerView={4}
+              slidesPerView={4.5}
               navigation
             >
               {props.item.stories_list.map((item) => {
@@ -92,6 +96,7 @@ function Vccircle(props) {
                             paracls="vcccircle_para"
                             title={item.title}
                             publish={item.publish}
+                            authordate="vcc_circle_li_author"
                             authorcls="vcccircle_author"
                             author={item.author_details[0].name}
                           />
