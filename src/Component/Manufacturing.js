@@ -1,7 +1,7 @@
 import React from "react";
 // import Advertisment from "./Advertisment";
 import { Cards } from "./Cards";
-import PremiumImg from "./PremiumImg";
+// import PremiumImg from "./PremiumImg";
 import {Link} from 'react-router-dom'
 import moment from "moment";
 
