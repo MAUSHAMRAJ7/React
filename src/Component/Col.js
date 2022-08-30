@@ -66,7 +66,7 @@ function Col(props) {
                 // if(index===0) return null;
                 return (
                   <SwiperSlide>
-                    <div className="editior_premium">
+                    {/* <div className="editior_premium"> */}
                       <Cards
                         className="col_content_Main"
                         contimgMain="col_content_img"
@@ -86,6 +86,8 @@ function Col(props) {
                         publish={item.publish}
                         authorcls="col_author_para1"
                         authordate="col_li_author"
+                        premium={item.premium}
+                        // imgcls="economy_resimg_img"
                         author={item.author_details[0].name}
                         incrval={
                           item.author_details.length > 1
@@ -93,11 +95,12 @@ function Col(props) {
                             : " "
                         }
                         one={item.author_details.length > 1 ? "+1" : null}
+
                       />
-                      {item.premium === "1" ? (
+                      {/* {item.premium === "1" ? (
                         <PremiumImg premiumclsname="premiumfounder" />
-                      ) : null}
-                    </div>
+                      ) : null} */}
+                    {/* </div> */}
                   </SwiperSlide>
                 );
               })}

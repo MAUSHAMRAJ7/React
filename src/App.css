@@ -269,13 +269,13 @@ html {
 .economy_card {
   position: relative;
 }
-/* .economy_resimg {
+.economy_resimg {
   position: relative;
-} */
+}
 .economy_resimg_img {
   width: 100%;
   border-radius: 14px;
-  position: relative;
+  /* position: relative; */
 }
 
 /* Editiors section*/
@@ -313,9 +313,9 @@ html {
   margin-top: 10px;
   letter-spacing: -0.36px;
 }
-.editior_premium {
+/* .editior_premium {
   position: relative;
-}
+} */
 /* .editior_premium1{
   position: relative;
 } */
@@ -338,7 +338,7 @@ html {
   position: absolute;
   background: transparent linear-gradient(90deg, #fe8c00 0%, #f83600 100%);
   text-align: center;
-  top: 90px;
+  bottom: 20px;
   right: 20px;
   text-transform: uppercase;
   font-size: 10px;
@@ -629,6 +629,7 @@ html {
 .stories_cardimage {
   width: 22rem;
   margin-top: 2rem;
+  position: relative;
 }
 .stories_cardimage img {
   width: 100%;
@@ -792,6 +793,9 @@ html {
 }
 .col_content_img_content {
   padding: 10px;
+}
+.col_content_img_main{
+  position: relative;
 }
 .col_content_img_main img {
   width: 100%;

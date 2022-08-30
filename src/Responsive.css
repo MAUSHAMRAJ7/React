@@ -369,6 +369,7 @@
   .economy_card {
     display: flex;
     width: 100%;
+    /* position: relative; */
   }
   .economy-card_img_main {
     display: flex;
@@ -396,10 +397,10 @@
     /* position: relative; */
     width: 50%;
   }
-  .premiumeconomy {
+  /* .premiumeconomy {
     top: 115px;
     right: 290px;
-  }
+  } */
   .premiumeditor {
     top: 120px;
     left: 175px;
@@ -807,8 +808,21 @@
   .manu_author_para1 {
     font-size: 10px;
   }
+  .manu_author_para {
+    font-size: 10px;
+    bottom: 0px;
+  }
+  .manu_left_para {
+    color: #222222;
+    font-weight: 500;
+    font-size: 10px;
+    width: 100%;
+    line-height: 16px;
+    margin-bottom: 25px;
+    letter-spacing: 0.16px;
+}
   .menu_title {
-    font-size: 12px;
+    font-size: 10px;
   }
   .manufacturing_button {
     display: none;
@@ -821,6 +835,7 @@
   .economy_card {
     display: flex;
     width: 100%;
+    position: relative;
   }
   .economy-card_img_main {
     display: flex;
@@ -845,13 +860,13 @@
     margin-left: 15px;
   }
   .economy_resimg {
-    /* position: relative; */
+    position: relative;
     width: 50%;
   }
-  .premiumeconomy {
+  /* .premiumeconomy {
     top: 115px;
     right: 290px;
-  }
+  } */
   .premiumeditor {
     top: 120px;
     left: 175px;

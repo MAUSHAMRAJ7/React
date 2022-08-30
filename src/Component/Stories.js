@@ -11,7 +11,8 @@ function Stories(props) {
               <div className="cardimage1">
                 {props.item.stories_list.map((item) => {
                   return (
-                    <div className="editior_premium">
+                    <>
+                    {/* // <div className="editior_premium"> */}
                     <Cards
                        authorslug={item.author_details[0].slug}
                        headingslug={item.industry_details[0].slug}
@@ -29,9 +30,11 @@ function Stories(props) {
                       paracls="morestories_title_para"
                       authordate="stories_li_author"
                       authorcls="morestories_author_para"
+                      premium={item.premium}
                     />
-                    {item.premium==="1"?<PremiumImg premiumclsname="premiumstories"/>:null}
-                    </div>
+                    {/* {item.premium==="1"?<PremiumImg premiumclsname="premiumstories"/>:null} */}
+                    {/* // </div> */}
+                  </>
                   );
                 })}
               </div>

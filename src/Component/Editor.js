@@ -3,7 +3,7 @@ import { Cards } from "./Cards";
 import Sideadd from "./Sideadd";
 import moment from "moment";
 import {Link} from 'react-router-dom'
-import PremiumImg from "./PremiumImg";
+// import PremiumImg from "./PremiumImg";
 function Editor(props) {
   return (
     <div className="container" key={props.item.stories_list[0].feid}>
@@ -46,7 +46,7 @@ function Editor(props) {
             {props.item.stories_list.map((item,index) => {
               if(index===0) return null;
               return (
-                <div className="editior_premium">
+                // <div className="editior_premium">
                 <Cards
                 authorslug={item.author_details[0].slug}
                 headingslug={item.industry_details[0].slug}
@@ -63,10 +63,12 @@ function Editor(props) {
                 publish={item.publish}
                 authordate="editior_li_author"
                 authorcls="author_para"
+                premium={item.premium}
                 author={item.author_details[0].name}
+                premiumclsname="premiumeditor"
                 />
-                {item.premium==="1"?<PremiumImg premiumclsname="premiumeditor"/>:null}
-                </div>
+                // {/* {item.premium==="1"?<PremiumImg premiumclsname="premiumeditor"/>:null} */}
+                // {/* </div> */}
               );
             })}
            </div> 
