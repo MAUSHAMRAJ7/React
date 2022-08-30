@@ -58,6 +58,19 @@
     margin-top: 40px;
     gap: 8px;
   }
+
+  .card-text2 {
+    font-size: 14px;
+    color: #222222;
+    font-weight: 500;
+    margin-top: 5px;
+    line-height: 15px;
+    letter-spacing: -0.28px;
+}
+.author_para {
+  font-size: 10px;
+  position: absolute;
+}
   /* Event section */
 }
 
@@ -177,6 +190,12 @@
     line-height: 26px;
     letter-spacing: -1px;
   }
+  .stories_card_text {
+    /* width: 19vw; */
+    width: 100%;
+    margin: 0px 0px;
+    padding: 18px 20px;
+}
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -203,7 +222,7 @@
     top: 0;
     height: auto;
     box-shadow: 0px 2px 10px;
-    margin-left: -5px;
+    /* margin-left: -5px; */
   }
   .hamburger-menu {
     display: block;
@@ -385,9 +404,8 @@
   }
   .editor_content2 {
     width: 100%;
-    margin-right: 20px;
     padding: 40px 0px;
-    border-right: 1px solid #22222222;
+    border-right:none;
   }
   .economy_respara {
     width: 50%;
@@ -531,14 +549,10 @@
   }
   /* Stories */
   .stories_cardimage {
-    /* width: 22rem; */
     margin-top: 2rem;
     width: 50%;
   }
   .stories_card_text {
-    /* width: 19vw; */
-    margin-left: 1rem;
-    margin-top: 2rem;
     width: 100%;
   }
 
@@ -591,7 +605,19 @@
   .cardrow {
     margin-left: 0px;
   }
-
+  .card_content-response_img {
+    position: relative;
+    width:auto;
+}
+.card_content_text {
+  margin-left: 15px;
+  width: auto;
+}
+  .card_content-response_img img {
+    width: 129px !important;
+    border-radius: 14px;
+    height: 90px !important;
+}
   /* Footer */
 
   .Container-footer {
@@ -686,19 +712,20 @@
     display: block;
     width: 100%;
     height: auto;
-    border: 0.1rem solid #ffffff;
+    border: 0.1px solid #ffffff;
     box-shadow: 0px 0px 3px;
     position: absolute;
     border-style: none;
     border-radius: 10px;
     /* width: 130rem; */
+    line-height: 20px;
     text-align: center;
     padding: 20px 0px;
   }
   .cross-icon {
-    font-size: 35px;
+    font-size: 24px;
     margin-right: 26px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
   .nav_close {
     display: block;
@@ -810,15 +837,25 @@
   }
   .manu_author_para {
     font-size: 10px;
+    line-height: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
     bottom: 0px;
   }
   .manu_left_para {
-    color: #222222;
+    /* color: #222222;
     font-weight: 500;
     font-size: 10px;
     width: 100%;
     line-height: 16px;
     margin-bottom: 25px;
+    letter-spacing: 0.16px; */
+    font-size: 12px;
+    color: #222222;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 15px;
     letter-spacing: 0.16px;
 }
   .menu_title {
@@ -851,9 +888,9 @@
   }
   .editor_content2 {
     width: 100%;
-    margin-right: 20px;
     padding: 40px 0px;
-    border-right: 1px solid #22222222;
+    border-right: none;
+    margin: 0px 0px;
   }
   .economy_respara {
     width: 50%;
@@ -863,6 +900,11 @@
     position: relative;
     width: 50%;
   }
+  .card_content_text {
+    /* margin-left: 15px; */
+    width: 50%;
+    padding-left: 5px;
+}
   /* .premiumeconomy {
     top: 115px;
     right: 290px;
@@ -925,10 +967,10 @@
     width: 100%;
   }
   .info {
-    margin-top: 25px;
+    margin-top: 75px;
   }
   .info h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .info img {
     width: 100%;
@@ -951,6 +993,9 @@
     height: 43px;
     border-radius: 22px;
   }
+  .Signup_btn{
+    margin-right: 20px;
+  }
   .input_email {
     width: 100%;
     padding: 8px 20px;
@@ -961,7 +1006,7 @@
     padding: 0px 20px;
   }
   .signpara {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: normal;
     color: #ffffffd8;
   }
@@ -995,6 +1040,24 @@
     width: 100%;
     padding: 20px;
   }
+  .vcccircle_btn1{
+    letter-spacing: 1.2px;
+    border-radius: 14px;
+    background: #096ffa;
+    height: 40px;
+    font-size: 14px;
+    padding: 8px 25px;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+}
+.vcccircle_btn{
+  display: none;
+}
+.bottom_vcccircle{
+  text-align: center;
+  display: block;
+}
   /* Stories */
   .stories_cardimage {
     /* width: 22rem; */
@@ -1024,12 +1087,15 @@
     display: none;
   }
   .event_author {
-    font-size: 12px;
+    font-size: 10px;
     color: #333;
+    padding-top: 5px;
   }
   .event_para {
-    font-size: 14px;
-  }
+    font-size: 12px;
+    line-height: 10px;
+    padding-top: 5px;
+}
   .event_heading {
     font-size: 12px;
     color: #096ffa;
@@ -1052,7 +1118,7 @@
     box-shadow: -2px 5px 10px rgb(0 0 0 / 5%);
   }
   .col_content_heading {
-    font-size: 22px;
+    font-size: 12px;
   }
   .cardrow {
     margin-left: 0px;
@@ -1097,6 +1163,23 @@
     color: #ffffff;
     line-height: 20px;
     padding: 0 40px;
+}
+.card-text2 {
+  font-size: 12px;
+  color: #222222;
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: 15px;
+  letter-spacing: 0.72px;
+}
+.author_para {
+  position: absolute;
+  color: #798692;
+  font-size: 10px;
+  line-height: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
 }
 
 }

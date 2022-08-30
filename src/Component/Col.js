@@ -36,11 +36,15 @@ function Col(props) {
                   spaceBetween: 40,
                 },
                 400:{
-                  slidesPerView: 1.5,
+                  slidesPerView: 1.8,
+                  spaceBetween: 40,
+                },
+                500:{
+                  slidesPerView: 2.0,
                   spaceBetween: 40,
                 },
                 668:{
-                  slidesPerView: 2,
+                  slidesPerView: 2.3,
                   spaceBetween: 10,
                 },
                 768: {
