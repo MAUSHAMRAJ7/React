@@ -35,28 +35,24 @@ function Col(props) {
                   slidesPerView: 1,
                   spaceBetween: 40,
                 },
+                360:{
+                  slidesPerView:1.2,
+                  spaceBetween: 40,
+                },
                 400:{
-                  slidesPerView: 1.8,
+                  slidesPerView: 1.5,
                   spaceBetween: 40,
                 },
-                500:{
-                  slidesPerView: 2.0,
+                576:{
+                  slidesPerView: 2.2,
                   spaceBetween: 40,
-                },
-                668:{
-                  slidesPerView: 2.3,
-                  spaceBetween: 10,
                 },
                 768: {
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
-                // 900:{
-                //   slidesPerView: 3,
-                //   spaceBetween: 20,
-                // },
-                998:{
-                  slidesPerView:4,
+                876:{
+                  slidesPerView: 3.2,
                   spaceBetween: 20,
                 },
                 1024:{

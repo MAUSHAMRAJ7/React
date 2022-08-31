@@ -25,28 +25,56 @@ function Vccircle(props) {
           <div className="cardimage_vccircle">
             <Swiper
               breakpoints={{
+                // 320: {
+                //   slidesPerView: 1,
+                //   spaceBetween: 40,
+                // },
+                // 400:{
+                //   slidesPerView:1.5,
+                //   spaceBetween:40,
+                // },
+                // 768: {
+                //   slidesPerView: 3,
+                //   spaceBetween: 20,
+                // },
+                // 668:{
+                //   slidesPerView: 2,
+                //   spaceBetween: 10,
+                // },
+                // 998:{
+                //   slidesPerView:4,
+                //   spaceBetween: 20,
+                // },
+                // 1200:{
+                //   slidesPerView: 4.5,
+                //   spaceBetween: 20,
+                // }
                 320: {
                   slidesPerView: 1,
                   spaceBetween: 40,
                 },
+                360:{
+                  slidesPerView:1.2,
+                  spaceBetween: 40,
+                },
                 400:{
-                  slidesPerView:1.5,
-                  spaceBetween:40,
+                  slidesPerView: 1.5,
+                  spaceBetween: 40,
+                },
+                576:{
+                  slidesPerView: 2.3,
+                  spaceBetween: 40,
                 },
                 768: {
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
-                668:{
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                },
-                998:{
-                  slidesPerView:4,
+                876:{
+                  slidesPerView: 3.2,
                   spaceBetween: 20,
                 },
-                1200:{
-                  slidesPerView: 4.5,
+                1024:{
+                  slidesPerView: 4.3,
                   spaceBetween: 20,
                 }
               }}
