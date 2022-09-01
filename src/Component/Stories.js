@@ -18,6 +18,7 @@ function Stories(props) {
                        headingslug={item.industry_details[0].slug}
                        titleslug={item.slug}
                        imgSlug={item.slug}
+                       clasName="wi"
                       contimgMain="card_content1"
                       imgclassdiv="stories_cardimage"
                       src={item.file_url}
