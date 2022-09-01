@@ -7,7 +7,8 @@ import {Link} from 'react-router-dom'
 function Editor(props) {
   return (
     <div className="container" key={props.item.stories_list[0].feid}>
-      <div className="editor_main" >
+      {/* <div className="editor_main editor_main_response" > */}
+      <div className={props.editor_main_class} >
         <div className="editor_submain">
         <div className="editor_content1">
         <p className="editor_head">{props.item.section_name}</p>

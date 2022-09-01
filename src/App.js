@@ -58,7 +58,7 @@ function App() {
 
       if(item.section_slug ==="editors-pick"){
         return(<>
-        <Editor item={item} />
+        <Editor item={item} editor_main_class="editor_main" />
         <Signup/>
         <Follow/>
         </>
@@ -67,7 +67,7 @@ function App() {
         if(item.section_slug === "limited-partner"){
           return(
             <>
-            <Col item={item}/>
+            <Col item={item} col_main_className="col_content"/>
             <Advertisment advertiseclass="Advertis2" img="./image/add5.png" />
             </>
           )
@@ -88,14 +88,14 @@ function App() {
         if(item.section_slug === "founders"){
           return(
             <>
-            <Col item={item}/>
+            <Col item={item} col_main_className="col_content col_content-responsive_card"/>
             <Advertisment advertiseclass="Advertis2" img="./image/add5.png" />
             </>
           )
         }
         if(item.section_slug ==="most-popular"){
           return(<>
-          <Editor item={item} />
+          <Editor item={item} editor_main_class="editor_main editor_main_response"/>
           </>
           )
           }
@@ -108,13 +108,13 @@ function App() {
 
           if(item.section_slug === "tmt"){
             return(<>
-             <Col item={item}/>
+             <Col item={item} col_main_className="col_content col_content-responsive_card"/>
             </>)
           }
 
           if(item.section_slug === "financials"){
             return(<>
-             <Col item={item}/>
+             <Col item={item} col_main_className="col_content col_content-responsive_card"/>
              <Advertisment advertiseclass="Advertis2" img="./image/add5.png" />
             </>)
           }
@@ -126,7 +126,7 @@ function App() {
 
           if(item.section_slug === "mergers-acquisitions"){
             return(<>
-             <Col item={item}/>
+             <Col item={item} col_main_className="col_content"/>
             </>)
           }
     })

@@ -16,7 +16,7 @@ function Navbar() {
     <div className="navbar_container">
     <div className="container containernav" >
       <div className="nav_container">
-        <div className="navbar res-navbar">
+        <div className="navbar res-navbar container">
           <div className="hamburger-menu">
             <a href="/" onClick={show}>
               <i class="fa-solid fa-bars"></i>

@@ -10,7 +10,8 @@ function Col(props) {
   return (
     <>
       <div className="container" key={props.item.stories_list[0].feid}>
-        <div className="col_content">
+        {/* <div className="col_content col_content-responsive_card"> */}
+        <div className={props.col_main_className}>
           <div className="col_content_heading1">
             <div className="col_content_heading">
               <h3 className="col_heading">{props.item.section_name}</h3>
@@ -104,7 +105,6 @@ function Col(props) {
                   </SwiperSlide>
                 );
               })}
-              ;
             </Swiper>
           </div>
         </div>

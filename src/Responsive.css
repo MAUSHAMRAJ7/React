@@ -99,7 +99,6 @@
   .manufacturing_left {
     width: 100%;
     padding: 15px 0px;
-
   }
   .economy_main {
     display: inline-flex;
@@ -200,12 +199,12 @@
   }
   .card_content {
     padding: 25px 5px;
-}
-.card_content_text {
-  /* margin-left: 15px; */
-  width: 50%;
-  padding: 0px 5px;
-}
+  }
+  .card_content_text {
+    /* margin-left: 15px; */
+    width: 50%;
+    padding: 0px 5px;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -365,15 +364,15 @@
   .economy_main {
     flex-direction: column;
     width: 100%;
+    margin-left: 10px;
   }
   .economy_card {
     display: flex;
     width: 100%;
     position: relative;
     border-bottom: 1px solid #22222222;
-    
   }
-  .economy_card:last-child{
+  .economy_card:last-child {
     border-bottom: none;
   }
 
@@ -391,7 +390,7 @@
   }
   .editor_content2 {
     width: 100%;
-    padding: 40px 0px;
+    padding: 10px 0px;
     border-right: none;
   }
   .economy_respara {
@@ -424,11 +423,13 @@
   .sideadvertisment {
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin: 10px;
+    /* margin-top: 50px; */
   }
   .secondadvertisment {
     display: block;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    padding: 20px;
   }
   .sideadvertisment_response {
     text-align: center;
@@ -477,7 +478,7 @@
   /* Signup */
 
   .signup_btn1 {
-    width: 100%;
+    /* width: 100%; */
     margin-top: 20px;
     margin-bottom: 20px;
     border: none;
@@ -869,16 +870,15 @@
     width: 100%;
     position: relative;
     border-bottom: 1px solid #22222222;
-    
   }
-  .economy_card:last-child{
+  .economy_card:last-child {
     border-bottom: none;
   }
 
   .economy-card_img_main {
     display: flex;
     padding: 10px 10px;
-}
+  }
   .editor_submain {
     display: flex;
     margin-bottom: 30px;
@@ -896,7 +896,7 @@
   }
   .economy_respara {
     width: auto;
-    padding:0px 5px;
+    padding: 0px 5px;
   }
   .economy_resimg {
     position: relative;
@@ -905,7 +905,7 @@
   .card_content {
     display: flex;
     padding: 10px 10px;
-}
+  }
   .card_content_text {
     margin-left: 0px;
     width: auto;
@@ -933,11 +933,14 @@
   .sideadvertisment {
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 0px;
+  }
+  .follow_add{
+    padding: 15px;
   }
   .secondadvertisment {
     display: block;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .sideadvertisment_response {
     text-align: center;
@@ -987,16 +990,14 @@
 
   .signup_btn1 {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border: none;
     background: #096ffa;
     color: #ffffff;
     font-size: 14px;
     font-weight: 600;
-    /* margin-left: 1.5rem; */
+    margin-left: 10px;
+    margin-top: 10px;
     padding: 8px 36px;
-    height: 43px;
     border-radius: 22px;
   }
   .Signup_btn {
@@ -1007,9 +1008,9 @@
     padding: 8px 20px;
   }
   .signup_context_input {
-    margin-top: 20px;
+    margin: 0px;
     display: block;
-    padding: 0px 20px;
+    padding: 20px 20px;
   }
   .signpara {
     font-size: 16px;
@@ -1095,7 +1096,16 @@
     color: #798692;
     display: flex;
   }
-  .col_heading{
+  .stories_main {
+    margin-top: 0px;
+  }
+  .col_content-responsive_card {
+    margin-top: 0px;
+  }
+  .editor_main_response {
+    margin-top: 0px;
+  }
+  .col_heading {
     font-size: 14px;
   }
   .col_para {
@@ -1104,7 +1114,20 @@
   .editor_head {
     font-size: 14px;
   }
-  /* pcoming Events */
+
+  .col_author_para1 {
+    color: #798692;
+    font-size: 12px;
+    /* margin-top: 1.6rem; */
+    bottom: 30px;
+    font-weight: 500;
+    position: absolute;
+    display: flex;
+  }
+  .vccircle_main {
+    margin-top: 0px;
+  }
+  /* Upcoming Events */
 
   .cardimage_responsestories {
     display: none;
