@@ -39,15 +39,6 @@ export const Cards = (props) => {
                    <span className={props.nameshow}>{props.incrval}</span>
                     </li>
                   </ul>
-{/* 
-                <p className= {props.authorcls}>
-                  {moment(props.publish).format("Do MMM ")}<span>
-                  <Link to ={props?.authorslug || " "}>
-                   {props.author}
-                   </Link></span>
-                   <span className={props.plusone}>{props.one}</span>
-                   <span className={props.nameshow}>{props.incrval}</span>
-                    </p> */}
             </div>
         </div>
         

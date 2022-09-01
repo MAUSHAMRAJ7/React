@@ -48,6 +48,7 @@ function Editor(props) {
               return (
                 // <div className="editior_premium">
                 <Cards
+                clasName="editior_card_main"
                 authorslug={item.author_details[0].slug}
                 headingslug={item.industry_details[0].slug}
                 titleslug={item.slug}

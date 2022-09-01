@@ -62,7 +62,7 @@ function Manufacturing(props) {
                   {/* <div className="editior_premium1"> */}
                     <Cards
                     authorslug={item.author_details[0].slug}
-                    clasName="economy_card"
+                    clasName="economy_card economy_card1"
                     contimgMain="economy-card_img_main"y
                     imgclassdiv="economy_resimg"
                     titleslug={item.slug}
