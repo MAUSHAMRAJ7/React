@@ -609,6 +609,9 @@ border-bottom: 1px solid #e3e3e3;
   line-height: 20px;
   letter-spacing: -0.28px;
 }
+.wi{
+  width: 50%;
+}
 .stories_li_author::after{
   content: "";
     width: 6px;

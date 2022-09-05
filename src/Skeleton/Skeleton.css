@@ -1,4 +1,7 @@
-
+.container{
+    width: 100%;
+    /* margin: 0 auto; */
+}
 .advertskeleton{
    margin-top: 150px;
     height: 130px;
@@ -73,7 +76,8 @@ margin-top: 40px;
 }
 
 .cardskeleton-main{
-    margin: 40px 10px;
+    /* margin: 40px 10px; */
+    padding: 40px 3px;
 }
 .cardimgskeleton{
     width: 290px;

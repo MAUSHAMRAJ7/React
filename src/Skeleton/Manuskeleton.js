@@ -1,6 +1,7 @@
 import React from "react";
 import Cardsskeleton from "./Cardsskeleton";
 import './Skeleton.css'
+// import './ResponsiveSkeleton.css';
 function Manuskeleton() {
   return (
     <div className="container skeletoncontaine">

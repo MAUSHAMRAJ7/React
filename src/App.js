@@ -45,7 +45,7 @@ function App() {
       </>:
       <>
       {
-    // eslint-disable-next-line array-callback-return
+    //eslint-disable-next-line array-callback-return
     data.map((item) => {
       if(item.section_slug ==="top-stories"){
         return(<>
