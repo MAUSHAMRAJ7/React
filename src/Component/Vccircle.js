@@ -62,7 +62,7 @@ function Vccircle(props) {
                   spaceBetween: 40,
                 },
                 576:{
-                  slidesPerView: 2.0,
+                  slidesPerView: 2.2,
                   spaceBetween: 40,
                 },
                 769: {
