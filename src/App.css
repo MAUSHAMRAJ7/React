@@ -1043,7 +1043,7 @@ border-bottom: 1px solid #e3e3e3;
 .plusONE:hover {
   cursor: pointer;
 }
-.plusONE:hover+.shwNme {
+/* .plusONE:hover+.shwNme {
   display: block !important;
   position: absolute;
   background: #fff;
@@ -1052,7 +1052,16 @@ border-bottom: 1px solid #e3e3e3;
   padding: 8px 8px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
- 
+  */
+.plusONE:hover+.shwNme {
+  display: block !important;
+  position: absolute;
+  background: #fff;
+  bottom: 15px;
+  right: 8px;
+  padding: 8px 8px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
 /* Loader-- */
 .loader {
   display: block;

@@ -48,7 +48,7 @@ function Col(props) {
                   slidesPerView: 2.2,
                   spaceBetween: 40,
                 },
-                768: {
+                769: {
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
